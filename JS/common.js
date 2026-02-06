@@ -79,25 +79,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 const section = document.querySelector(".magic-video");
-const videoBox = document.querySelector(".magic-video-box");
+const box = document.querySelector(".magic-video-box");
 
 window.addEventListener("scroll", () => {
   const rect = section.getBoundingClientRect();
   const vh = window.innerHeight;
+  const vw = window.innerWidth;
 
   const progress = Math.min(Math.max((vh - rect.top) / (rect.height - vh), 0), 1);
 
-  /* 시작 = 풀스크린, 끝 = 정확히 400px */
-  const startScale = 1;
-  const endScale = 400 / vh;
+  /* ===== 구간 나누기 =====
+     0.0 ~ 0.5  : 100vw → 100vh (정사각형으로 변형)
+     0.5 ~ 1.0  : 100vh → 400px (정사각형 유지하며 축소)
+  */
 
-  const eased = 1 - Math.pow(1 - progress, 3); // 부드러운 감속 (선택)
-  const scale = startScale - (startScale - endScale) * eased;
+  let width, height;
 
-  videoBox.style.transform =
-    `translate(-50%, -50%) scale(${scale})`;
+  if (progress < 0.5) {
+    const t = progress / 0.5; // 0~1
+    width = vw - (vw - vh) * t;
+    height = vh;
+  } else {
+    const t = (progress - 0.5) / 0.5; // 0~1
+    width = vh - (vh - 400) * t;
+    height = vh - (vh - 400) * t;
+  }
 
-  if (progress > 0.55) {
+  box.style.width = `${width}px`;
+  box.style.height = `${height}px`;
+
+  /* blur + text */
+  if (progress > 0.6) {
     section.classList.add("active");
   } else {
     section.classList.remove("active");

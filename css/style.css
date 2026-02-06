@@ -710,14 +710,14 @@ table {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100vw;
+  width: 100vh;
   height: 100vh;
   transform: translate(-50%, -50%) scale(1);
   transform-origin: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.08s linear;
+  transition: none;
 }
 .magic-video-media {
   width: 100%;
@@ -734,7 +734,7 @@ table {
 }
 .magic-video-content {
   position: relative;
-  width: min(1200px, 90%);
+  gap: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
