@@ -7,6 +7,7 @@
 @use 'header_footer/header';
 @use 'header_footer/footer';
 @use 'index/video-section';
+@use 'index/sustainability.scss';
 
 .header{
   background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 80%);

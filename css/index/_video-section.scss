@@ -106,10 +106,11 @@
   /* BUTTON */
   &-btn {
     @include m.slide-bg-btn;
-    display: flex;
-    margin-top: auto;
-    align-self: center;
+    position: absolute;
+    top: 100%;left: 50%;
+    transform: translateX(-50%);
     padding: 0 20px;
+    margin-top: 80px;
     cursor: pointer;
     img{
       width: 48px;height: 48px;

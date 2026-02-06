@@ -88,19 +88,13 @@ window.addEventListener("scroll", () => {
 
   const progress = Math.min(Math.max((vh - rect.top) / (rect.height - vh), 0), 1);
 
-  /* ===== 구간 나누기 =====
-     0.0 ~ 0.5  : 100vw → 100vh (정사각형으로 변형)
-     0.5 ~ 1.0  : 100vh → 400px (정사각형 유지하며 축소)
-  */
-
   let width, height;
-
   if (progress < 0.5) {
-    const t = progress / 0.5; // 0~1
+    const t = progress / 0.5;
     width = vw - (vw - vh) * t;
     height = vh;
   } else {
-    const t = (progress - 0.5) / 0.5; // 0~1
+    const t = (progress - 0.5) / 0.5;
     width = vh - (vh - 400) * t;
     height = vh - (vh - 400) * t;
   }
@@ -108,7 +102,6 @@ window.addEventListener("scroll", () => {
   box.style.width = `${width}px`;
   box.style.height = `${height}px`;
 
-  /* blur + text */
   if (progress > 0.6) {
     section.classList.add("active");
   } else {
