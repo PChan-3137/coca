@@ -10,11 +10,12 @@
   border-bottom: 2px solid v.$c-text-darkgray;
   transition: 0.3s;
   z-index: 100;
+  align-items: center;
 
   .header-wrap {
     @include m.inner;
     display: flex;
-    align-items: center;
+
     justify-content: space-between;
     padding: 0 8px;
 

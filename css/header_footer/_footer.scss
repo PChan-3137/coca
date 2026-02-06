@@ -3,7 +3,6 @@
 @use '../base/variable' as v;
 
 .footer{
-  margin-top: 160px;
   background-color: v.$c-text-black;
   color: v.$c-text-white;
   .footer-wrap{

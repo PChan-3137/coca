@@ -143,12 +143,12 @@ table {
   border-bottom: 2px solid #4A4A4A;
   transition: 0.3s;
   z-index: 100;
+  align-items: center;
 }
 .header .header-wrap {
   max-width: 1610px;
   margin: 0 155px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 0 8px;
 }
@@ -426,7 +426,6 @@ table {
 }
 
 .footer {
-  margin-top: 160px;
   background-color: #0F0F0F;
   color: #FFFFFF;
 }
@@ -699,7 +698,7 @@ table {
   background-color: #FFFFFF;
 }
 .header nav .nav-menu li .hover-text li:hover {
-  color: #0F0F0F;
+  color: #FFFFFF;
 }
 .header:hover {
   background: rgba(255, 255, 255, 0.8);

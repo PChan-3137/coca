@@ -3,6 +3,8 @@
 @use 'base/variable' as v;
 @use 'base/mixin' as m;
 @use 'base/responsive' as r;
+@use 'header_footer/header';
+@use 'header_footer/footer';
 
 body{
   font-family: v.$ff-kr;
@@ -13,8 +15,7 @@ body{
   flex-direction: column;
   gap: 18px;
   text-align: center;
-  margin-top: 220px;
-  margin-bottom: 80px;
+  margin: 160px 0;
   justify-content: center;
   
   .locate{
