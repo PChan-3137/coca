@@ -1,11 +1,14 @@
-@use 'responsive' as r;
+@use '../base/responsive' as r;
+@use '../base/mixin' as m;
 @use '../base/variable' as v;
+
 .footer{
+  margin-top: 160px;
   background-color: v.$c-text-black;
   color: v.$c-text-white;
   .footer-wrap{
-    @include inner;
-    padding: 40px 155px;
+    @include m.inner;
+    padding: 40px 0;
     .active-section{
       display: flex;
       align-items: center;
@@ -24,7 +27,7 @@
             &:hover a img{filter: brightness(0) saturate(100%) invert(19%) sepia(93%) saturate(3904%) hue-rotate(345deg) brightness(91%) contrast(95%);}
           }
           .nation{
-            @include flex-center;
+            @include m.flex-center;
             gap: 12px;
             padding: 8px 16px;
             border: 1px solid v.$c-text-white;
