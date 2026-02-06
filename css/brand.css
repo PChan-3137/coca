@@ -1,0 +1,517 @@
+@charset "UTF-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* 스크롤 공간 */
+.hero-wrapper {
+  height: 2200px;
+}
+
+/* sticky 기준 */
+.hero {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* 실제 크기 변화 대상 */
+  /* 텍스트 */
+}
+.hero-inner {
+  position: relative;
+  width: 40%;
+  height: 30vh;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.hero-inner.fullscreen {
+  width: 100%;
+  height: 100vh;
+  border-radius: 0;
+}
+.hero-inner.dim .video-dim {
+  background: rgba(0, 0, 0, 0.7);
+}
+.hero-inner video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.hero .video-dim {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.8s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+.hero-text {
+  position: absolute;
+  bottom: 40%;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 1s ease;
+}
+.hero-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero-text h2 {
+  font-size: 46px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  margin-bottom: 56px;
+}
+.hero-text p {
+  font-size: 18px;
+  color: #eee;
+}
+
+#brandDescText {
+  white-space: pre-line;
+}
+
+.product-section {
+  position: relative;
+  margin: 80px 0;
+  padding: 160px 0;
+  overflow: hidden;
+}
+.product-section .product-bg {
+  position: absolute;
+  inset: 0;
+  height: 55%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.product-section .inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* swiper */
+.productSwiper {
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0;
+  /* 네비게이션 버튼 */
+  /* 슬라이드 카드 */
+}
+@media (max-width: 1024px) {
+  .productSwiper {
+    width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  .productSwiper {
+    width: 100%;
+  }
+}
+.productSwiper .swiper-wrapper {
+  align-items: center;
+}
+.productSwiper .swiper-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  z-index: 9;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.productSwiper .swiper-btn.prev {
+  left: calc(49% - 166px);
+  background-image: url("../image/brands/swiper-left.png");
+}
+.productSwiper .swiper-btn.next {
+  right: calc(49% - 166px);
+  background-image: url("../image/brands/swiper-right.png");
+}
+@media (max-width: 768px) {
+  .productSwiper .swiper-btn {
+    display: none;
+  }
+}
+.productSwiper .swiper-slide {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0.8);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.productSwiper .swiper-slide .card {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  opacity: 0.85;
+}
+.productSwiper .swiper-slide .card img {
+  width: 100%;
+  height: auto;
+}
+.productSwiper .swiper-slide .title {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .productSwiper .swiper-slide {
+    width: 240px;
+  }
+  .productSwiper .swiper-slide .card {
+    height: auto;
+    padding: 30px 0;
+  }
+  .productSwiper .swiper-slide .title {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .productSwiper .swiper-slide {
+    width: auto;
+  }
+  .productSwiper .swiper-slide .card {
+    height: auto;
+    padding: 20px 0;
+  }
+  .productSwiper .swiper-slide .title {
+    margin-top: 8px;
+    font-size: 8px;
+  }
+}
+.productSwiper .swiper-slide-active {
+  pointer-events: auto;
+  cursor: pointer;
+  transform: scale(1);
+  z-index: 2;
+}
+.productSwiper .swiper-slide-active .card {
+  opacity: 1;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.media-list img {
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+}
+.media .image-wrap {
+  padding: 80px 0;
+  background-image: url(../image/brands/media.png);
+  background-size: cover;
+  background-position: center;
+}
+.media .image-wrap .inner {
+  max-width: 1610px;
+  margin: 0 155px;
+}
+@media (max-width: 1024px) {
+  .media .image-wrap .inner {
+    max-width: 920px;
+    margin: 0 52px;
+  }
+}
+@media (max-width: 768px) {
+  .media .image-wrap .inner {
+    max-width: 720px;
+    margin: 0 24px;
+  }
+}
+@media (max-width: 440px) {
+  .media .image-wrap .inner {
+    max-width: 392px;
+    margin: 0 24px;
+  }
+}
+.media .image-wrap .inner .media-list {
+  display: flex;
+  gap: 24px;
+}
+.media .image-wrap .inner .media-list a {
+  flex: 1;
+  display: block;
+  position: relative;
+  aspect-ratio: 16/9;
+}
+.media .image-wrap .inner .media-list a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.media .media-more {
+  margin: 40px auto auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 36px;
+  border: 2px solid #E31D2E;
+  border-radius: 60px;
+  background: linear-gradient(to right, #E31D2E 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: #E31D2E;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Escoredream";
+  cursor: pointer;
+  transition: background-position 0.35s ease, color 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  padding: 10px 26px;
+}
+.media .media-more:hover {
+  background-position: left bottom;
+  color: #FFFFFF;
+}
+@media (max-width: 768px) {
+  .media .media-more {
+    padding: 16px 28px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 440px) {
+  .media .media-more {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .media .media-more {
+    padding: 8px 20px;
+  }
+}
+@media (max-width: 440px) {
+  .media .media-more {
+    font-size: 12px;
+    padding: 6px 16px;
+  }
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 28px;
+}
+
+menu, ol, ul, li {
+  padding: 0;
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Escoredream";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff") format("woff");
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Escoredream";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Escoredream";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Escoredream";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff") format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Escoredream";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Escoredream";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff") format("woff");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Escoredream";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Escoredream";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff") format("woff");
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Escoredream";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff") format("woff");
+  font-weight: 900;
+  font-display: swap;
+}
+body {
+  font-family: "Escoredream";
+}
+
+.title-location {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: center;
+  margin-top: 220px;
+  margin-bottom: 80px;
+  justify-content: center;
+}
+.title-location .locate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-location .locate img {
+  width: 24px;
+  height: 21px;
+}
+.title-location .brand-title {
+  margin-top: 10px;
+  min-height: 80px;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.inner {
+  max-width: 1610px;
+  margin: 0 155px;
+}
+@media (max-width: 1024px) {
+  .inner {
+    max-width: 920px;
+    margin: 0 52px;
+  }
+}
+@media (max-width: 768px) {
+  .inner {
+    max-width: 720px;
+    margin: 0 24px;
+  }
+}
+@media (max-width: 440px) {
+  .inner {
+    max-width: 392px;
+    margin: 0 24px;
+  }
+}
+
+.brand-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 160px;
+}
+.brand-nav .nav {
+  width: 50%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}

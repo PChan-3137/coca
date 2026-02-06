@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Brand</title>
+
+  <!-- Swiper / AOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <link rel="stylesheet" href="css/brand.css" />
+</head>
+<body>
+
+  <!-- 1. Header 무시 -->
+
+  <section class="title-location">
+    <div class="locate">
+      <img src="image/home-icon.png" alt=""> / Brands /&nbsp;<span id="brandEN"></span>
+    </div>
+    <h1 id="brandKR" class="brand-title"></h1>
+  </section>
+
+
+  <section class="hero-wrapper">
+    <div class="hero" id="heroSection">
+      <div class="hero-inner" id="heroInner">
+        <video id="heroVideo" muted playsinline loop>
+          <source id="heroSource" type="video/mp4" />
+        </video>
+        <div class="video-dim"></div>
+        <div class="hero-text" id="heroText">
+          <h2 id="brandDescTitle"></h2>
+          <p id="brandDescText"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-section">
+    <div class="product-bg"></div>
+    <div class="inner">
+      <div class="swiper productSwiper">
+        <div class="swiper-wrapper" id="productWrapper"></div>
+        <button class="swiper-btn prev"></button>
+        <button class="swiper-btn next"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="media">
+    <div class="image-wrap">
+      <div class="inner">
+        <div class="media-list" id="mediaList"></div>
+      </div>
+    </div>
+    <a href="media.html" class="media-more">전체보기</a>
+  </section>
+
+  <section class="brand-nav">
+    <div class="nav prev" id="prevBrand"></div>
+    <div class="nav next" id="nextBrand"></div>
+  </section>
+
+  <script type="module" src="js/brandDetail.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>

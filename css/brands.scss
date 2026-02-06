@@ -1,0 +1,13 @@
+@use 'base/reset';
+@use 'base/library';
+@use 'base/responsive' as r;
+@use 'base/variable' as v;
+@use 'base/mixin' as m;
+@use "brand/brandsMain";
+@use "header_footer/sub_header";
+@use "header_footer/footer";
+
+body{
+  font-family: v.$ff-kr;
+}
+

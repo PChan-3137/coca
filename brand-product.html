@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Brand Product Detail</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/brand-product.css" />
+</head>
+<body>
+
+  <section class="title-location">
+    <div class="locate">
+      <img src="image/home-icon.png" alt=""> / Brands / Product
+    </div>
+    <h1 class="brand-title">제품 상세정보</h1>
+  </section>
+
+  <section class="brand-product">
+    <div class="inner">
+      <section class="brand-tabs-wrap">
+        <div class="brand-tabs-inner">
+          <div class="brand-tabs-title">
+            브랜드별<br />제품 보기
+          </div>
+          <div class="brand-tabs" id="brandTabs">
+          </div>
+      
+        </div>
+      </section>
+
+      <div class="product-view">
+        <p class="product-name" id="activeProductName"></p>
+        <div class="product-image">
+          <img id="activeProductImage" src="" alt="" />
+        </div>
+      </div>
+      <div class="product-desc" id="activeProductDesc"></div>
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <script type="module" src="js/brandProduct.js"></script>
+</body>
+</html>

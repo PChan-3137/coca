@@ -1,0 +1,191 @@
+@use 'base/reset';
+@use 'base/library';
+@use 'base/variable' as v;
+@use 'base/mixin' as m;
+@use 'base/responsive' as r;
+
+body{
+  font-family: v.$ff-kr;
+}
+
+.title-location {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: center;
+  margin-top: 220px;
+  margin-bottom: 80px;
+  justify-content: center;
+  
+  .locate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {width: 24px;height: 21px;}
+  }
+
+  .brand-title {
+    margin-top: 10px;
+    min-height: 80px;
+    text-align: center;
+    font-size: v.$subpage-title;
+    font-weight: v.$fw-title
+  }
+}
+
+
+.brand-product {
+  padding: 140px 0 160px;
+  background: #fff;
+
+  .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+// 상단 탭
+.brand-tabs-wrap {
+  margin: 80px 0 120px;
+  padding: 32px 40px;
+  border: 1px solid #000;
+}
+
+.brand-tabs-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* 왼쪽 텍스트 */
+.brand-tabs-title {
+  min-width: 160px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* 버튼 영역 */
+.brand-tabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px 16px;
+  flex: 1;
+}
+.brand-tab {
+  height: 44px;
+  padding: 0 16px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 22px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  &:hover {
+    border-color: #999;
+  }
+  &.active {
+    border-color: #d6001c;
+    color: #d6001c;
+    font-weight: 600;
+  }
+}
+
+// 메인 이미지
+
+.product-view {
+  text-align: center;
+  margin-bottom: 80px;
+
+  .product-name {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: -0.02em;
+  }
+
+  .product-image {
+    width: 420px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+// 제품 설명
+
+.product-desc {
+  max-width: 720px;
+  margin: 40px auto 80px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  text-align: center;
+  letter-spacing: -0.01em;
+  white-space: pre-line;
+}
+
+// 제품 grid
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px 24px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.product-card {
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  img {
+    width: 100%;
+    max-width: 160px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .name {
+    margin-top: 12px;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+
+  /* 활성 상태 */
+  &.active {
+    img {
+      transform: scale(1.08);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -12px;
+      transform: translateX(-50%);
+      width: 36px;
+      height: 2px;
+      background: #d6001c; // 코카콜라 레드
+    }
+  }
+}

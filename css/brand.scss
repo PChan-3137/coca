@@ -1,0 +1,57 @@
+@use 'brand/brand-hero';
+@use 'brand/brand-swiper';
+@use 'brand/brand-media';
+@use 'base/reset';
+@use 'base/library';
+@use 'base/variable' as v;
+@use 'base/mixin' as m;
+@use 'base/responsive' as r;
+
+body{
+  font-family: v.$ff-kr;
+}
+
+.title-location {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: center;
+  margin-top: 220px;
+  margin-bottom: 80px;
+  justify-content: center;
+  
+  .locate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {width: 24px;height: 21px;}
+  }
+
+  .brand-title {
+    margin-top: 10px;
+    min-height: 80px;
+    text-align: center;
+    font-size: v.$subpage-title;
+    font-weight: v.$fw-title
+  }
+}
+
+.inner{
+  @include m.inner;
+}
+
+
+
+.brand-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 160px;
+  .nav {
+    width: 50%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+}
+
