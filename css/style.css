@@ -690,17 +690,6 @@ table {
 .magic-video {
   position: relative;
   height: 300vh;
-  /* VIDEO */
-  /* RED BLUR OVERLAY */
-  /* TEXT */
-  /* ============================= */
-  /* 좌우 텍스트 - 영상 기준 고정 */
-  /* ============================= */
-  /* 왼쪽 : 영상 왼쪽 바깥에 붙임 */
-  /* 오른쪽 : 영상 오른쪽 바깥에 붙임 */
-  /* 등장 */
-  /* BUTTON */
-  /* ACTIVE STATE */
 }
 .magic-video-sticky {
   position: sticky;
@@ -747,7 +736,7 @@ table {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  opacity: 0;
+  opacity: 1;
   transition: 0.4s;
   white-space: nowrap;
 }
@@ -776,7 +765,7 @@ table {
 .magic-video-btn {
   position: absolute;
   bottom: 60px;
-  opacity: 0;
+  opacity: 1;
   transform: translateY(20px);
   transition: 0.4s;
 }
@@ -788,17 +777,6 @@ table {
   background: transparent;
   cursor: pointer;
   font-weight: 600;
-}
-.magic-video.active .magic-video-overlay {
-  opacity: 1;
-}
-.magic-video.active .magic-video-content {
-  opacity: 1;
-  transform: translateY(0);
-}
-.magic-video.active .magic-video-btn {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .header {

@@ -4,7 +4,7 @@
 
 .magic-video {
   position: relative;
-  height: 300vh; // 스크롤 길이 (조절 가능)
+  height: 300vh; 
 
   &-sticky {
     position: sticky;
@@ -17,7 +17,6 @@
     align-items: center;
   }
 
-  /* VIDEO */
   &-box {
     position: absolute;
     top: 50%;
@@ -37,7 +36,6 @@
     object-fit: cover;
   }
 
-  /* RED BLUR OVERLAY */
   &-overlay {
     position: absolute;
     inset: 0;
@@ -47,30 +45,24 @@
     transition: opacity .4s;
   }
 
-  /* TEXT */
   &-content {
   position: absolute;
   inset: 0;
   pointer-events: none;
 }
 
-/* ============================= */
-/* 좌우 텍스트 - 영상 기준 고정 */
-/* ============================= */
-
 .magic-left,
 .magic-right {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  opacity: 0;
+  opacity: 1;
   transition: .4s;
   white-space: nowrap;
 }
 
-/* 왼쪽 : 영상 왼쪽 바깥에 붙임 */
 .magic-left {
-  right: calc(100% + 24px);   // ⭐ 영상 기준
+  right: calc(100% + 24px);
   text-align: right;
 
   h2 {
@@ -84,28 +76,24 @@
   }
 }
 
-/* 오른쪽 : 영상 오른쪽 바깥에 붙임 */
 .magic-right {
-  left: calc(100% + 24px);    // ⭐ 영상 기준
+  left: calc(100% + 24px);
 
   max-width: 360px;
   font-size: 14px;
   line-height: 1.6;
 }
 
-/* 등장 */
 .magic-video.active {
   .magic-left,
   .magic-right {
     opacity: 1;
   }
 }
-
-  /* BUTTON */
   &-btn {
     position: absolute;
     bottom: 60px;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
     transition: .4s;
 
@@ -120,20 +108,5 @@
     }
   }
 
-  /* ACTIVE STATE */
-  &.active {
-    .magic-video-overlay {
-      opacity: 1;
-    }
 
-    .magic-video-content {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .magic-video-btn {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 }
