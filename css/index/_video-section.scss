@@ -1,0 +1,117 @@
+@use "../base/variable" as v;
+@use "../base/mixin" as m;
+@use "../base/responsive" as r;
+
+.magic-video {
+  position: relative;
+  height: 300vh; // 스크롤 길이 (조절 가능)
+
+  &-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* VIDEO */
+  &-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%) scale(1);
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .08s linear;
+
+  }
+
+  &-media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* RED BLUR OVERLAY */
+  &-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(200, 0, 0, 0.35);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    transition: opacity .4s;
+  }
+
+  /* TEXT */
+  &-content {
+    position: relative;
+    width: min(1200px, 90%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: .5s;
+    z-index: 2;
+  }
+
+  .magic-left {
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+    }
+    p {
+      margin-top: 6px;
+      font-weight: 600;
+    }
+  }
+
+  .magic-right {
+    max-width: 360px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* BUTTON */
+  &-btn {
+    position: absolute;
+    bottom: 60px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: .4s;
+
+    button {
+      border: 1px solid #e60023;
+      color: #e60023;
+      padding: 12px 28px;
+      border-radius: 999px;
+      background: transparent;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  }
+
+  /* ACTIVE STATE */
+  &.active {
+    .magic-video-overlay {
+      opacity: 1;
+    }
+
+    .magic-video-content {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .magic-video-btn {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

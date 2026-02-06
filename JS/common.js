@@ -75,3 +75,31 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 // 푸터 자바스크립트 코드
+
+
+
+const section = document.querySelector(".magic-video");
+const videoBox = document.querySelector(".magic-video-box");
+
+window.addEventListener("scroll", () => {
+  const rect = section.getBoundingClientRect();
+  const vh = window.innerHeight;
+
+  const progress = Math.min(Math.max((vh - rect.top) / (rect.height - vh), 0), 1);
+
+  /* 시작 = 풀스크린, 끝 = 정확히 400px */
+  const startScale = 1;
+  const endScale = 400 / vh;
+
+  const eased = 1 - Math.pow(1 - progress, 3); // 부드러운 감속 (선택)
+  const scale = startScale - (startScale - endScale) * eased;
+
+  videoBox.style.transform =
+    `translate(-50%, -50%) scale(${scale})`;
+
+  if (progress > 0.55) {
+    section.classList.add("active");
+  } else {
+    section.classList.remove("active");
+  }
+});
