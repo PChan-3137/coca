@@ -3,8 +3,10 @@
 @use "../base/responsive" as r;
 
 .magic-video {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  height: 300vh; // 스크롤 길이 (조절 가능)
+  height: 200vh; // 스크롤 길이 (조절 가능)
 
   &-sticky {
     position: sticky;
@@ -105,6 +107,13 @@
   &-btn {
     @include m.slide-bg-btn;
     display: flex;
+    margin-top: auto;
+    align-self: center;
+    padding: 0 20px;
+    cursor: pointer;
+    img{
+      width: 48px;height: 48px;
+    }
   }
 
   /* ACTIVE STATE */

@@ -688,8 +688,10 @@ table {
 }
 
 .magic-video {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  height: 300vh;
+  height: 200vh;
   /* VIDEO */
   /* RED BLUR OVERLAY */
   /* TEXT */
@@ -790,6 +792,10 @@ table {
   cursor: pointer;
   transition: background-position 0.35s ease, color 0.25s ease, border-color 0.25s ease;
   display: flex;
+  margin-top: auto;
+  align-self: center;
+  padding: 0 20px;
+  cursor: pointer;
 }
 .magic-video-btn:hover {
   background-position: left bottom;
@@ -806,6 +812,10 @@ table {
     padding: 12px 18px;
     font-size: 16px;
   }
+}
+.magic-video-btn img {
+  width: 48px;
+  height: 48px;
 }
 .magic-video.active .magic-video-overlay {
   opacity: 1;
