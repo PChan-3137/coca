@@ -693,6 +693,12 @@ table {
   /* VIDEO */
   /* RED BLUR OVERLAY */
   /* TEXT */
+  /* ============================= */
+  /* 좌우 텍스트 - 영상 기준 고정 */
+  /* ============================= */
+  /* 왼쪽 : 영상 왼쪽 바깥에 붙임 */
+  /* 오른쪽 : 영상 오른쪽 바깥에 붙임 */
+  /* 등장 */
   /* BUTTON */
   /* ACTIVE STATE */
 }
@@ -710,14 +716,13 @@ table {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
   transform-origin: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: none;
 }
 .magic-video-media {
   width: 100%;
@@ -733,15 +738,22 @@ table {
   transition: opacity 0.4s;
 }
 .magic-video-content {
-  position: relative;
-  gap: 400px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.magic-video .magic-left,
+.magic-video .magic-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   opacity: 0;
-  transform: translateY(40px);
-  transition: 0.5s;
-  z-index: 2;
+  transition: 0.4s;
+  white-space: nowrap;
+}
+.magic-video .magic-left {
+  right: calc(100% + 24px);
+  text-align: right;
 }
 .magic-video .magic-left h2 {
   font-size: 32px;
@@ -752,9 +764,14 @@ table {
   font-weight: 600;
 }
 .magic-video .magic-right {
+  left: calc(100% + 24px);
   max-width: 360px;
   font-size: 14px;
   line-height: 1.6;
+}
+.magic-video .magic-video.active .magic-left,
+.magic-video .magic-video.active .magic-right {
+  opacity: 1;
 }
 .magic-video-btn {
   position: absolute;

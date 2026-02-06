@@ -22,16 +22,13 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%);
     transform-origin: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: none;
-    // transition: transform .08s linear;
-
   }
 
   &-media {
@@ -52,34 +49,57 @@
 
   /* TEXT */
   &-content {
-    position: relative;
-    // width: min(1200px, 90%);
-    gap: 400px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    opacity: 0;
-    transform: translateY(40px);
-    transition: .5s;
-    z-index: 2;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* ============================= */
+/* 좌우 텍스트 - 영상 기준 고정 */
+/* ============================= */
+
+.magic-left,
+.magic-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: .4s;
+  white-space: nowrap;
+}
+
+/* 왼쪽 : 영상 왼쪽 바깥에 붙임 */
+.magic-left {
+  right: calc(100% + 24px);   // ⭐ 영상 기준
+  text-align: right;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
   }
 
-  .magic-left {
-    h2 {
-      font-size: 32px;
-      font-weight: 700;
-    }
-    p {
-      margin-top: 6px;
-      font-weight: 600;
-    }
+  p {
+    margin-top: 6px;
+    font-weight: 600;
   }
+}
 
+/* 오른쪽 : 영상 오른쪽 바깥에 붙임 */
+.magic-right {
+  left: calc(100% + 24px);    // ⭐ 영상 기준
+
+  max-width: 360px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* 등장 */
+.magic-video.active {
+  .magic-left,
   .magic-right {
-    max-width: 360px;
-    font-size: 14px;
-    line-height: 1.6;
+    opacity: 1;
   }
+}
 
   /* BUTTON */
   &-btn {
