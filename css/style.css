@@ -690,6 +690,17 @@ table {
 .magic-video {
   position: relative;
   height: 300vh;
+  /* VIDEO */
+  /* RED BLUR OVERLAY */
+  /* TEXT */
+  /* ============================= */
+  /* 좌우 텍스트 - 영상 기준 고정 */
+  /* ============================= */
+  /* 왼쪽 : 영상 왼쪽 바깥에 붙임 */
+  /* 오른쪽 : 영상 오른쪽 바깥에 붙임 */
+  /* 등장 */
+  /* BUTTON */
+  /* ACTIVE STATE */
 }
 .magic-video-sticky {
   position: sticky;
@@ -763,20 +774,41 @@ table {
   opacity: 1;
 }
 .magic-video-btn {
-  position: absolute;
-  bottom: 60px;
-  opacity: 1;
-  transform: translateY(20px);
-  transition: 0.4s;
-}
-.magic-video-btn button {
-  border: 1px solid #e60023;
-  color: #e60023;
-  padding: 12px 28px;
-  border-radius: 999px;
-  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 36px;
+  border: 2px solid #E31D2E;
+  border-radius: 60px;
+  background: linear-gradient(to right, #E31D2E 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: #E31D2E;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Escoredream";
   cursor: pointer;
-  font-weight: 600;
+  transition: background-position 0.35s ease, color 0.25s ease, border-color 0.25s ease;
+  display: flex;
+}
+.magic-video-btn:hover {
+  background-position: left bottom;
+  color: #FFFFFF;
+}
+@media (max-width: 768px) {
+  .magic-video-btn {
+    padding: 16px 28px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 440px) {
+  .magic-video-btn {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+}
+.magic-video.active .magic-video-overlay {
+  opacity: 1;
 }
 
 .header {
