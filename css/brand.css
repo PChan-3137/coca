@@ -253,15 +253,20 @@
   }
 }
 .media .image-wrap .inner .media-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: center;
 }
 .media .image-wrap .inner .media-list a {
-  max-height: 440px;
+  max-height: 360px;
   flex: 1;
   display: block;
   position: relative;
   aspect-ratio: 16/9;
+  overflow: hidden;
 }
 .media .image-wrap .inner .media-list a img {
   width: 100%;
