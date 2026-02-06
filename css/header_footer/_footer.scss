@@ -1,8 +1,8 @@
 @use 'responsive' as r;
-
+@use '../base/variable' as v;
 .footer{
-  background-color: $c-text-black;
-  color: $c-text-white;
+  background-color: v.$c-text-black;
+  color: v.$c-text-white;
   .footer-wrap{
     @include inner;
     padding: 40px 155px;
@@ -27,13 +27,13 @@
             @include flex-center;
             gap: 12px;
             padding: 8px 16px;
-            border: 1px solid $c-text-white;
+            border: 1px solid v.$c-text-white;
             border-radius: 60px;
             transition: 0.2s;
             cursor: pointer; 
             span{
-              font-family: $ff-kr;
-              font-size: $fs-sm;
+              font-family: v.$ff-kr;
+              font-size: v.$fs-sm;
               font-weight: 400;
               transition: 0.2s
             }
@@ -42,8 +42,8 @@
               transition: 0.2s
             }
             &:hover{
-              background-color: $c-brand-primary;
-              border: 1px solid $c-brand-primary;
+              background-color: v.$c-brand-primary;
+              border: 1px solid v.$c-brand-primary;
             }
           }
         }
@@ -56,18 +56,18 @@
           a{
             display: inline-block;
             width: 40px; height: 40px;
-            border: 1px solid $c-text-white;
+            border: 1px solid v.$c-text-white;
             border-radius: 50%; 
             text-align: center;
             line-height: 40px;
-            color: $c-text-white;
+            color: v.$c-text-white;
             transition: 0.2s;
             i{font-size: 18px;}
           }
           & a:hover{
-            background-color: $c-brand-primary;
-            border: 1px solid $c-brand-primary;
-            color: $c-text-white;
+            background-color: v.$c-brand-primary;
+            border: 1px solid v.$c-brand-primary;
+            color: v.$c-text-white;
           }
         }
       }
@@ -76,7 +76,7 @@
         grid-template-columns: repeat(3, auto);
         gap: 112px;
         .footer-service{
-          font-family: $ff-kr;
+          font-family: v.$ff-kr;
           h4{
             font-size: 20px;
             font-weight: 500;
@@ -87,14 +87,14 @@
             font-weight: 200;
             margin-bottom: 18px;
             &:last-child{margin-bottom: 0;}
-            &:hover a{color: $c-brand-light;}
+            &:hover a{color: v.$c-brand-light;}
           }
         }
       }
     }
     .website-right{
-      font-family: $ff-kr;
-      font-size: $fs-sm;
+      font-family: v.$ff-kr;
+      font-size: v.$fs-sm;
       font-weight: 400;
       text-align: right;
     }
