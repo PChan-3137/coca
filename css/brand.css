@@ -702,7 +702,7 @@ table {
 .mobile-menu .mobile-menu-wrap .mobile-menu-item .menu-title-select::after {
   content: "";
   display: inline-block;
-  background: url(../../image/keyboard_arrow_down_24dp_FFF.svg) no-repeat;
+  background: url(../image/keyboard_arrow_down_24dp_FFF.svg) no-repeat;
   background-size: cover;
   width: 32px;
   height: 32px;
