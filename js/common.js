@@ -86,25 +86,25 @@ window.addEventListener("scroll", () => {
   const vh = window.innerHeight;
   const vw = window.innerWidth;
 
-  const progress = Math.min(Math.max((vh - rect.top) / (rect.height - vh), 0), 1);
+  // 50% 지점부터 진행
+  let progress = (vh * 0.3 - rect.top) / (rect.height - vh * 0.5);
+  progress = Math.max(0, Math.min(1, progress)); 
+  progress = 1 - Math.pow(1 - progress, 3); 
 
-  let width, height;
+  let videoWidth, videoHeight;
+
   if (progress < 0.5) {
-    const t = progress / 0.5;
-    width = vw - (vw - vh) * t;
-    height = vh;
+    let t = progress / 0.5;
+    videoWidth = vw - (vw - vh) * t;
+    videoHeight = vh;
   } else {
-    const t = (progress - 0.5) / 0.5;
-    width = vh - (vh - 400) * t;
-    height = vh - (vh - 400) * t;
+    let t = (progress - 0.5) / 0.5;
+    videoWidth = vh - (vh - 400) * t;
+    videoHeight = videoWidth;
   }
 
-  box.style.width = `${width}px`;
-  box.style.height = `${height}px`;
+  box.style.width = videoWidth + "px";
+  box.style.height = videoHeight + "px";
 
-  if (progress > 0.6) {
-    section.classList.add("active");
-  } else {
-    section.classList.remove("active");
-  }
+  section.classList.toggle("active", progress > 0.6);
 });

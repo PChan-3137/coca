@@ -819,6 +819,9 @@ table {
   width: 48px;
   height: 48px;
 }
+.magic-video-btn:hover img {
+  filter: brightness(0) invert(1);
+}
 .magic-video.active .magic-video-overlay {
   opacity: 1;
 }

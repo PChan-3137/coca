@@ -115,6 +115,11 @@
     img{
       width: 48px;height: 48px;
     }
+    &:hover{
+      img{
+        filter: brightness(0) invert(1);
+      }
+    }
   }
 
   /* ACTIVE STATE */
