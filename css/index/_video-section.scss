@@ -120,6 +120,9 @@
         filter: brightness(0) invert(1);
       }
     }
+    @include r.mobile-lg{
+      padding: 0 20px;
+    }
   }
 
   /* ACTIVE STATE */
@@ -128,5 +131,28 @@
       opacity: 1;
     }
 
+  }
+  @include r.tablet{
+    .magic-left,
+    .magic-right {
+      left: 50%;
+      right: auto;
+      transform: translate(-50%, 0);
+      text-align: center;
+      white-space: normal;
+    }
+
+    /* 위쪽 */
+    .magic-left {
+      top: calc(50% - 300px); // 영상 위 (간격 조절 가능)
+    }
+
+    /* 아래쪽 */
+    .magic-right {
+      top: calc(50% + 220px); // 영상 아래 (간격 조절 가능)
+    }
+    .magic-video-btn{
+      margin-top: 120px;
+    }
   }
 }

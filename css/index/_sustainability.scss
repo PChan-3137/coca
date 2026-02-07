@@ -5,13 +5,18 @@
 $s-height: 620px;
 
 .sustainability {
+  margin-top: 160px;
   display: flex;
-  height: $s-height;
+  height: auto;
   overflow: hidden;
+  @include r.mobile-lg{
+    flex-direction: column;
+  }
 }
 
 /* 공통 영역 */
 .s-item {
+  height: 620px;
   position: relative;
   width: 50%;
   overflow: hidden;
@@ -30,20 +35,18 @@ $s-height: 620px;
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, .45);
-    transition: flex .5s cubic-bezier(.4, 0, .2, 1);
     z-index: 1;
   }
 
   /* 코너 오버레이 */
   .overlay.corner {
     position: absolute;
-    width: 105%;
-    height: 110%;
+    width: 102%;
+    height: 120%;
     background: rgba(220, 0, 0, .85);
     z-index: 2;
-
     transform: scale(0) translate(0, 0);
-    transition: transform .6s cubic-bezier(.4, 0, .2, 1);
+    transition: transform .6s;
   }
 
   &.left .overlay.corner {
@@ -79,11 +82,13 @@ $s-height: 620px;
     color: #fff;
     text-align: center;
     pointer-events: none;
+    font-size: 28px;
+    line-height: 40px;
   }
 
   .icon {
-    width: 28px;
-    height: 28px;
+    width: 50px;
+    height: 50px;
   }
 
   .btn {
@@ -96,6 +101,17 @@ $s-height: 620px;
     background: transparent;
     color: #fff;
     font-size: 14px;
+  }
+  @include r.tablet{
+    .overlay.corner{
+      width: 110%;
+    }
+  }
+  @include r.mobile-lg{
+    width: 100%;
+    &:hover{
+      width: 100%;
+    }
   }
 }
 

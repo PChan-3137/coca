@@ -822,18 +822,53 @@ table {
 .magic-video-btn:hover img {
   filter: brightness(0) invert(1);
 }
+@media (max-width: 768px) {
+  .magic-video-btn {
+    padding: 0 20px;
+  }
+}
 .magic-video.active .magic-video-overlay {
   opacity: 1;
 }
+@media (max-width: 1024px) {
+  .magic-video {
+    /* 위쪽 */
+    /* 아래쪽 */
+  }
+  .magic-video .magic-left,
+  .magic-video .magic-right {
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, 0);
+    text-align: center;
+    white-space: normal;
+  }
+  .magic-video .magic-left {
+    top: calc(50% - 300px);
+  }
+  .magic-video .magic-right {
+    top: calc(50% + 220px);
+  }
+  .magic-video .magic-video-btn {
+    margin-top: 120px;
+  }
+}
 
 .sustainability {
+  margin-top: 160px;
   display: flex;
-  height: 620px;
+  height: auto;
   overflow: hidden;
+}
+@media (max-width: 768px) {
+  .sustainability {
+    flex-direction: column;
+  }
 }
 
 /* 공통 영역 */
 .s-item {
+  height: 620px;
   position: relative;
   width: 50%;
   overflow: hidden;
@@ -853,17 +888,16 @@ table {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
-  transition: flex 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
 }
 .s-item .overlay.corner {
   position: absolute;
-  width: 105%;
-  height: 110%;
+  width: 102%;
+  height: 120%;
   background: rgba(220, 0, 0, 0.85);
   z-index: 2;
   transform: scale(0) translate(0, 0);
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.6s;
 }
 .s-item.left .overlay.corner {
   left: -40%;
@@ -892,10 +926,12 @@ table {
   color: #fff;
   text-align: center;
   pointer-events: none;
+  font-size: 28px;
+  line-height: 40px;
 }
 .s-item .icon {
-  width: 28px;
-  height: 28px;
+  width: 50px;
+  height: 50px;
 }
 .s-item .btn {
   opacity: 0;
@@ -907,6 +943,19 @@ table {
   background: transparent;
   color: #fff;
   font-size: 14px;
+}
+@media (max-width: 1024px) {
+  .s-item .overlay.corner {
+    width: 110%;
+  }
+}
+@media (max-width: 768px) {
+  .s-item {
+    width: 100%;
+  }
+  .s-item:hover {
+    width: 100%;
+  }
 }
 
 /* ========== HOVER 동작 ========== */
