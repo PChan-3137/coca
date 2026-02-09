@@ -41,7 +41,7 @@ $s-height: 620px;
   /* 코너 오버레이 */
   .overlay.corner {
     position: absolute;
-    width: 102%;
+    width: 110%;
     height: 120%;
     background: rgba(220, 0, 0, .85);
     z-index: 2;
@@ -83,6 +83,7 @@ $s-height: 620px;
     text-align: center;
     pointer-events: none;
     font-size: 28px;
+    font-weight: bold;
     line-height: 40px;
   }
 
