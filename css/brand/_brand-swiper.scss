@@ -114,13 +114,11 @@ $product-center-offset:
     @include r.tablet {
       width: 240px;
       .card{height: auto;padding: 30px 0;}
-      .title{margin-top: 12px;font-size: 12px;}
     }
 
     @include r.mobile-lg {
       width: auto;
       .card{height: auto;padding: 20px 0;}
-      .title{margin-top: 8px;font-size: 8px;}
     }
   }
   .swiper-slide-active {

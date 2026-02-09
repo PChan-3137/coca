@@ -2,9 +2,7 @@
 @use "../base/responsive" as r;
 @use "../base/mixin" as m;
 
-/* =========================
-   Title / Location
-========================= */
+
 .title-location {
   display: flex;
   flex-direction: column;
@@ -33,9 +31,7 @@
   }
 }
 
-/* =========================
-   Tabs
-========================= */
+
 .tabs {
   display: flex;
   justify-content: center;
@@ -72,14 +68,9 @@
   }
 }
 
-/* =========================
-   Content
-========================= */
 .content-inner {
   @include m.inner;
-  padding: 0 200px;
 
-  /* ===== Grid ===== */
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
