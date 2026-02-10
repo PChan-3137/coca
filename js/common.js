@@ -1,15 +1,25 @@
-let seLect = document.querySelectorAll('.select');
-let mainHeader = document.querySelector('.header')
+const selects = document.querySelectorAll('.select');
+const header = document.querySelector('.header');
 
-seLect.forEach(enter => {
-  let hoverText = enter.querySelector('.hover-text');
-  enter.addEventListener('mouseenter', function(){
-    hoverText.classList.add('on')
-  })
-  mainHeader.addEventListener('mouseleave', function(){
-    hoverText.classList.remove('on')
-  })
-})
+selects.forEach(select => {
+  const hoverText = select.querySelector('.hover-text');
+
+  select.addEventListener('mouseenter', () => {
+    selects.forEach(other => {
+      const otherText = other.querySelector('.hover-text');
+      if (otherText) otherText.classList.remove('on');
+    });
+
+    hoverText.classList.add('on');
+  });
+});
+header.addEventListener('mouseleave', () => {
+  selects.forEach(select => {
+    const hoverText = select.querySelector('.hover-text');
+    if (hoverText) hoverText.classList.remove('on');
+  });
+});
+
 
 let menuToggle = document.querySelector('.menu-toggle');
 let mobileMenu = document.querySelector('.mobile-menu');

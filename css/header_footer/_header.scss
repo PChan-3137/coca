@@ -11,6 +11,7 @@
   transition: 0.3s;
   z-index: 100;
   align-items: center;
+  // position: absolute;
 
   .header-wrap {
     @include m.inner;
@@ -44,6 +45,9 @@
         li {
           position: relative;
           transition: 0.2s;
+          a{
+            height: 100%
+          };
 
           &:hover {
             color: v.$c-brand-primary;
@@ -51,9 +55,10 @@
 
           .hover-text {
             position: absolute;
-            top: 67px;
+            top: 100%;
             left: 0;
             display: none;
+            z-index: 100;
 
             li {
               font-size: v.$fs-sm;
@@ -132,7 +137,10 @@
       .menu-toggle {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center ;
         gap: 8px;
+        
 
         span {
           width: 32px;
@@ -143,7 +151,6 @@
         }
 
         &.active {
-          border: 1px solid v.$c-brand-primary;
 
           span {
             &:nth-child(1) {

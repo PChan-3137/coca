@@ -192,14 +192,18 @@ table {
   position: relative;
   transition: 0.2s;
 }
+.header .header-wrap nav .nav-menu li a {
+  height: 100%;
+}
 .header .header-wrap nav .nav-menu li:hover {
   color: #E31D2E;
 }
 .header .header-wrap nav .nav-menu li .hover-text {
   position: absolute;
-  top: 67px;
+  top: 100%;
   left: 0;
   display: none;
+  z-index: 100;
 }
 .header .header-wrap nav .nav-menu li .hover-text li {
   font-size: 16px;
@@ -259,6 +263,8 @@ table {
   .header .header-wrap .menu-toggle {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
   }
   .header .header-wrap .menu-toggle span {
@@ -267,9 +273,6 @@ table {
     background-color: #0F0F0F;
     border-radius: 4px;
     transition: 0.2s;
-  }
-  .header .header-wrap .menu-toggle.active {
-    border: 1px solid #E31D2E;
   }
   .header .header-wrap .menu-toggle.active span:nth-child(1) {
     background-color: #E31D2E;

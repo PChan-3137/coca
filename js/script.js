@@ -93,3 +93,40 @@ window.addEventListener("scroll", () => {
 
   section.classList.toggle("active", progress > 0.6);
 });
+
+
+
+
+let tabBtn = document.querySelectorAll('.tab-btn');
+let textBox = document.querySelectorAll('.brand-text-box');
+let imgBox = document.querySelectorAll('.tab-img-wrap');
+
+tabBtn.forEach(function(buttons){
+  buttons.addEventListener('click', function(){
+    let targetId = this.getAttribute('data-tab');
+
+    tabBtn.forEach(b => {
+      b.classList.remove('active')
+    });
+    textBox.forEach(t => {
+      t.classList.remove('active')
+    });
+    imgBox.forEach(i => {
+      i.classList.remove('active')
+    });
+
+    this.classList.add('active');
+
+    textBox.forEach(text => {
+      if(text.id === targetId){
+        text.classList.add('active');
+      }
+    });
+
+    imgBox.forEach(img => {
+      if(img.id === targetId){
+        img.classList.add('active')
+      }
+    });
+  })
+})
