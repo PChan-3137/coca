@@ -119,7 +119,11 @@ if (!brand.media || brand.media.length === 0) {
     const item = document.createElement("a");
     item.href = m.link;
     item.target = "_blank";
-    item.innerHTML = `<img src="${m.thumb}" />`;
+    item.dataset.title = m.mediatitle;
+    const img = document.createElement("img");
+    img.src = m.thumb;
+    img.alt = m.mediatitle;
+    item.appendChild(img);
     mediaList.appendChild(item);
   });
 }

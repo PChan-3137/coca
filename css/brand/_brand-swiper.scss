@@ -28,6 +28,18 @@ $product-center-offset:
   .inner {
     position: relative;
     z-index: 1;
+    &::before{
+      content: '제품 목록';
+      position: absolute;
+      top: -20%;
+      left: 0;
+      color: v.$c-text-white;
+      font-size: v.$section-title;
+      @include r.mobile-lg{
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
   }
 }
 

@@ -49,10 +49,12 @@ export const brandData = [
     media: [
       {
         thumb: "image/brands/media/coca1.png",
+        mediatitle:"[#코카콜라] 나의 미식 파트너, 코카-콜라!",
         link: "https://youtu.be/s5PlCF1yC24"
       },
       {
         thumb: "image/brands/media/coca2.png",
+        mediatitle:"[#코카콜라] 그냥 뷔가 코카-콜라 제로 마시는 영상",
         link: "https://youtu.be/2MU_OlYBHNg"
       }
     ],
@@ -95,6 +97,7 @@ export const brandData = [
     media: [
       {
         thumb: "image/brands/media/sprite1.png",
+        mediatitle:"[#스프라이트] 휘몰아 Chill 상쾌함! 스프라이트 제로 Chill!",
         link: "https://youtu.be/N2Vkb_BoFK4"
       }
     ],
@@ -186,10 +189,12 @@ export const brandData = [
     media: [
       {
         thumb: "image/brands/media/fanta1.png",
+        mediatitle: "[#환타] 편의점 스낵 옆엔? 환타!",
         link: "https://youtu.be/-e0v6dYYBls"
       },
       {
         thumb: "image/brands/media/fanta2.png",
+        mediatitle: "[#환타] 게임 중 스낵 옆엔? 환타!",
         link: "https://youtu.be/GiMxKhlkT0g"
       }
     ],
@@ -232,6 +237,7 @@ export const brandData = [
     media: [
       {
         thumb: "image/brands/media/drpepper1.png",
+        mediatitle: "@Romeosshow의 Dr Pepper Baby (Good & Nice Jingle)",
         link: "https://youtu.be/Wcua0DMG3mw"
       }
     ],
@@ -464,10 +470,12 @@ export const brandData = [
     media: [
       {
         thumb: "image/brands/media/powerade1.png",
+        mediatitle: "[#파워에이드] 나만의 순간, 멈추지 않는 파워 - 라민 야말 선수 편",
         link: "https://youtu.be/TslaiFlfy6A"
       },
       {
         thumb: "image/brands/media/powerade2.png",
+        mediatitle: "[#파워에이드] 나만의 순간, 멈추지 않는 파워 - 김도영 선수 편",
         link: "https://youtu.be/KNltMw-Gpns"
       },
     ],
@@ -503,10 +511,12 @@ export const brandData = [
     media: [
       {
         thumb: "image/brands/media/toreta1.png",
+        mediatitle: "[#토레타] 더워? 가볍게 이온실천 토레타!",
         link: "https://youtu.be/WwnBw6I7iyU"
       },
       {
         thumb: "image/brands/media/toreta2.png",
+        mediatitle: "[#토레타] 함께 즐겨봐! 가볍게 흘린 땀엔 토레타!",
         link: "https://youtu.be/tm98GbgvzSA"
       },
     ],

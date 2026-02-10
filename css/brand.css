@@ -97,6 +97,20 @@
   position: relative;
   z-index: 1;
 }
+.product-section .inner::before {
+  content: "제품 목록";
+  position: absolute;
+  top: -20%;
+  left: 0;
+  color: #FFFFFF;
+  font-size: 40px;
+}
+@media (max-width: 768px) {
+  .product-section .inner::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
 /* swiper */
 .productSwiper {
@@ -217,12 +231,13 @@
   flex-direction: column;
 }
 .media .image-wrap {
-  padding: 80px 0;
+  padding: 160px 0 80px;
   background-image: url(../image/brands/media.png);
   background-size: cover;
   background-position: center;
 }
 .media .image-wrap .inner {
+  position: relative;
   max-width: 1610px;
   margin: 0 155px;
 }
@@ -244,27 +259,68 @@
     margin: 0 24px;
   }
 }
+.media .image-wrap .inner::before {
+  content: "미디어";
+  position: absolute;
+  top: -20%;
+  color: #FFFFFF;
+  font-size: 40px;
+}
+@media (max-width: 768px) {
+  .media .image-wrap .inner::before {
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 .media .image-wrap .inner .media-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 360px;
   gap: 24px;
-  place-items: center;
-  justify-content: center;
+  grid-auto-rows: auto;
+}
+@media (max-width: 768px) {
+  .media .image-wrap .inner .media-list {
+    grid-template-columns: 1fr;
+  }
 }
 .media .image-wrap .inner .media-list a {
-  height: 360px;
-  flex: 1;
-  display: block;
   position: relative;
-  aspect-ratio: 16/9;
+  display: block;
   overflow: hidden;
+  border-radius: 16px;
+  aspect-ratio: 16/9;
 }
 .media .image-wrap .inner .media-list a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+.media .image-wrap .inner .media-list a:hover img {
+  filter: brightness(0.6);
+  transform: scale(1.05);
+}
+.media .image-wrap .inner .media-list a::before {
+  content: attr(data-title);
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  width: 100%;
+  padding: 15px 14px 30px;
+  background: rgba(255, 255, 255, 0.644);
+  backdrop-filter: blur(5px);
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+.media .image-wrap .inner .media-list a:hover::before {
+  opacity: 1;
+  z-index: 20;
 }
 .media .media-more {
   margin: 40px auto auto;
