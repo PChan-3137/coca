@@ -195,8 +195,61 @@
     }
    } 
  }
- //반응형 768
  @include r.tablet{
+  .brands-inner{
+    flex-direction: column;
+    gap: 84px;
+    .tab-img-wrap{
+      width: 1024px; height: 960px;
+      .prod-img{width: inherit; height: inherit; object-fit: contain;}
+    }
+    .brand-intro{
+      .brand-text-box{
+       text-align: center;
+       margin: 0 auto 48px auto;
+       &::before{
+        width: 976px; height: 280px;
+        border-radius: 24px;
+        top: 50%;
+       }
+       &:nth-child(1)::before{background: v.$c-brand-primary;}
+       &:nth-child(2)::before{background: v.$c-sprite;}
+       &:nth-child(3)::before{background: v.$c-fanta;}
+       &:nth-child(4)::before{background: v.$c-docpeper;}
+       &:nth-child(5)::before{background: v.$c-powerade;}
+       &:nth-child(6)::before{background: #94EA03;}
+
+       &:nth-child(1).active::before{left: -62%;}
+       &:nth-child(2).active::before{left: -62%;}
+       &:nth-child(3).active::before{left: -62%;}
+       &:nth-child(4).active::before{left: -62%;}
+       &:nth-child(5).active::before{left: -62%;}
+       &:nth-child(6).active::before{left: -62%;}
+
+       &::after{top: -18%; left: 25%; font-size: 72px;}
+
+       h5{font-size: 16px;}
+       .brand-name{font-size: 72px; line-height: 84px; margin: 2px 0;}
+       p{font-size: 16px; margin-bottom: 8px;}
+       .page-link{
+        font-size: 16px;
+        padding: 12px 16px;
+       } 
+      }
+    }
+    .tab-box{
+      .brand-tab-btns{
+        gap: 24px;
+        .tab-btn{
+          width: 52px; height: 52px;
+          &::before{width: 6px; height: 6px;}
+        }
+      }
+    }
+  }
+ }
+ //반응형 768
+ @include r.mobile-lg{
   .brands-inner{
     flex-direction: column;
     gap: 84px;
