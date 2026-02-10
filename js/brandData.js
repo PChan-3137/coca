@@ -12,35 +12,35 @@ export const brandData = [
     products: [
       {
         name: "코카-콜라",
-        image: "image/brands/Product/product1-1.png",
+        image: "image/brands/product/product1-1.png",
         productDescription:{
           detail: "코카-콜라 한 잔이 가져다주는 마법 같은 짜릿함!\n오리지널의 상쾌함과 짜릿함은 전 세계적으로 사랑받고 있습니다."
         }
       },
       {
         name: "코카-콜라 제로",
-        image: "image/brands/Product/product1-2.png",
+        image: "image/brands/product/product1-2.png",
         productDescription:{
           detail: "제로 칼로리로 가볍게, 오리지널의 짜릿함은 그대로!\n코카-콜라 제로의 시그니처 컬러인 블랙 로고가 한 눈에 시선을 사로잡습니다. \n2006년 국내에 첫 출시된 이후 제로 탄산 시장에서 많은 사랑을 받아오고 있습니다."
         }
       },
       {
         name: "코카-콜라 제로 레몬",
-        image: "image/brands/Product/product1-3.png",
+        image: "image/brands/product/product1-3.png",
         productDescription:{
           detail: "코카-콜라 제로의 짜릿함에 상큼한 레몬향을 더한 코카-콜라 제로 레몬.\n제로 칼로리의 가벼움을 상큼한 레몬맛과 함께 상쾌하게 즐길 수 있습니다. "
         }
       },
       {
         name: "코카-콜라 제로 체리",
-        image: "image/brands/Product/product1-4.png",
+        image: "image/brands/product/product1-4.png",
         productDescription:{
           detail: "글로벌 마니아들의 마음을 사로잡으며 오랜 시간 사랑받아온 체리맛 코-크를 이제 국내에서도 제로 칼로리로 만날 수 있습니다.\n코카-콜라 제로의 짜릿함에 매력적인 체리향이 더해진 코카-콜라 제로 체리를 즐겨보세요. ."
         }
       },
       {
         name: "코카-콜라 제로제로",
-        image: "image/brands/Product/product1-5.png",
+        image: "image/brands/product/product1-5.png",
         productDescription:{
           detail: "언제 어디서나 짜릿하게!\n코카-콜라 제로제로는 제로 슈거와 제로 카페인으로\n하루 언제든, 늦은 저녁에도 부담 없이 가볍게 즐길 수 있습니다. "
         }
@@ -72,21 +72,21 @@ export const brandData = [
     products: [
       {
         name: "스프라이트",
-        image: "image/brands/Product/product2-1.png",
+        image: "image/brands/product/product2-1.png",
         productDescription:{
           detail: "입안 가득 퍼지는 상쾌함과 시원함을 느낄 수 있는 스프라이트는\n전 세계 190개국 이상에서 판매되며 쿨하고 힙한 매력으로 사랑받고 있습니다."
         }
       },
       {
         name: "스프라이트 제로",
-        image: "image/brands/Product/product2-2.png",
+        image: "image/brands/product/product2-2.png",
         productDescription:{
           detail: "스프라이트의 강렬한 상쾌함을 제로 칼로리로 부담 없이 즐길 수 있습니다."
         }
       },
       {
         name: "스프라이트 제로 Chill",
-        image: "image/brands/Product/product2-3.png",
+        image: "image/brands/product/product2-3.png",
         productDescription:{
           detail: "달콤한 소다향과 스프라이트의 톡 쏘는 상쾌함이 쿨하게!\n마시는 순간 입안에 퍼지는 시원함을 느낄 수 있습니다.\n제로 슈거·제로 칼로리로 부담 없이 가볍게, Chill하게 즐겨보세요."
         }
@@ -114,70 +114,70 @@ export const brandData = [
     products: [
       {
         name: "환타 오렌지",
-        image: "image/brands/Product/product3-1.png",
+        image: "image/brands/product/product3-1.png",
         productDescription:{
           detail: "달콤하게 톡 쏘는 환타 오렌지는 마지막 한 방울까지 즐거움과 짜릿함을 전합니다."
         }
       },
       {
         name: "환타 파인애플",
-        image: "image/brands/Product/product3-2.png",
+        image: "image/brands/product/product3-2.png",
         productDescription:{
           detail: "새콤달콤한 매력의 환타 파인애플은 마시는 순간 신나는 상상을 더해줍니다."
         }
       },
       {
         name: "환타 멜론",
-        image: "image/brands/Product/product3-3.png",
+        image: "image/brands/product/product3-3.png",
         productDescription:{
           detail: "부드러운 환타 멜론의 달콤함이 우리 일상에 새로운 즐거움을 가져다줍니다."
         }
       },
       {
         name: "환타 포도향",
-        image: "image/brands/Product/product3-4.png",
+        image: "image/brands/product/product3-4.png",
         productDescription:{
           detail: "톡톡 튀는 환타 포도향의 상큼함이 우리 일상의 유쾌한 순간을 채워줍니다."
         }
       },
       {
         name: "환타 제로 오렌지",
-        image: "image/brands/Product/product3-5.png",
+        image: "image/brands/product/product3-5.png",
         productDescription:{
           detail: "제로 칼로리로 가볍게, 환타 오렌지의 상큼함은 그대로 담았습니다."
         }
       },
       {
         name: "환타 제로 파인애플",
-        image: "image/brands/Product/product3-6.png",
+        image: "image/brands/product/product3-6.png",
         productDescription:{
           detail: "제로 칼로리로 가볍게, 환타 파인애플의 새콤달콤함은 그대로 담았습니다."
         }
       },
       {
         name: "환타 제로 상큼 피치",
-        image: "image/brands/Product/product3-7.png",
+        image: "image/brands/product/product3-7.png",
         productDescription:{
           detail: "가볍게 즐기는 복숭아의 상큼함! 제로 칼로리로 가볍게 즐길 수 있습니다."
         }
       },
       {
         name: "환타 제로 포도향",
-        image: "image/brands/Product/product3-8.png",
+        image: "image/brands/product/product3-8.png",
         productDescription:{
           detail: "제로 칼로리로 가볍게, 환타 포도향의 상콤달콤함은 그대로 담았습니다."
         }
       },
       {
         name: "암바사 by 환타",
-        image: "image/brands/Product/product3-9.png",
+        image: "image/brands/product/product3-9.png",
         productDescription:{
           detail: "1984년 국내 출시된 밀크탄산음료, 암바사! \n탄산의 상쾌함과 몽글몽글 밀크의 부드럽고 달콤한 맛을 즐길 수 있습니다."
         }
       },
       {
         name: "암바사 zero by 환타",
-        image: "image/brands/Product/product3-10.png",
+        image: "image/brands/product/product3-10.png",
         productDescription:{
           detail: "제로 칼로리로 즐기는 부드러운 밀크 탄산!\n탄산의 상쾌함과 몽글몽글 밀크의 부드럽고 달콤한 맛을 제로 칼로리로 가볍게 즐길 수 있습니다."
         }
@@ -209,21 +209,21 @@ export const brandData = [
     products: [
       {
         name: "닥터페퍼",
-        image: "image/brands/Product/product4-1.png",
+        image: "image/brands/product/product4-1.png",
         productDescription:{
           detail: "오랜 역사를 지닌 닥터페퍼는 독특한 맛과 톡 쏘는 탄산으로 마실수록 빠져드는 경험을 선사합니다."
         }
       },
       {
         name: "닥터페퍼 제로",
-        image: "image/brands/Product/product4-2.png",
+        image: "image/brands/product/product4-2.png",
         productDescription:{
           detail: "닥터페퍼만의 독특한 풍미와 시원한 탄산을 제로 칼로리로 부담 없이 즐길 수 있습니다."
         }
       },
       {
         name: "닥터페퍼 제로 스트로베리크림향",
-        image: "image/brands/Product/product4-3.png",
+        image: "image/brands/product/product4-3.png",
         productDescription:{
           detail: "닥터페퍼 제로에 스트로베리크림향이 더해진 색다른 조합!\n달콤한 매력의 닥터페퍼 스트로베리크림향을 제로 칼로리로 즐겨보세요."
         }
@@ -251,28 +251,28 @@ export const brandData = [
     products: [
       {
         name: "캐나다 드라이 진저에일 토닉",
-        image: "image/brands/Product/product5-1.png",
+        image: "image/brands/product/product5-1.png",
         productDescription:{
           detail: "캐나다 드라이 중에서도 가장 먼저 탄생한 진저에일은 은은한 진저향으로 깔끔한 맛을 자랑합니다."
         }
       },
       {
         name: "캐나다 드라이 토닉워터",
-        image: "image/brands/Product/product5-2.png",
+        image: "image/brands/product/product5-2.png",
         productDescription:{
           detail: "캐나다 드라이 토닉워터는 시트러스 향이 첨가되어 다양한 주류와 함께 더욱 상쾌하게 즐길 수 있습니다."
         }
       },
       {
         name: "캐나다 드라이 클럽소다",
-        image: "image/brands/Product/product5-3.png",
+        image: "image/brands/product/product5-3.png",
         productDescription:{
           detail: "캐나다 드라이 클럽소다는 달지 않아 칵테일 및 에이드 믹서에 잘 어울립니다."
         }
       },
       {
         name: "캐나다 드라이 진저에일 토닉 제로",
-        image: "image/brands/Product/product5-4.png",
+        image: "image/brands/product/product5-4.png",
         productDescription:{
           detail: "진저에일 토닉 본연의 은은한 진저향과 깔끔한 맛을 제로 슈거와 제로 칼로리로 더 가볍게 즐길 수 있습니다."
         }
@@ -295,21 +295,21 @@ export const brandData = [
     products: [
       {
         name: "써니텐 오렌지향",
-        image: "image/brands/Product/product6-1.png",
+        image: "image/brands/product/product6-1.png",
         productDescription:{
           detail: "등하굣길, 심심할 때, 친구들과 함께 언제 어디서나 부담없이 즐기는 써니텐은 상콤달콤한 맛과 어우러진 짜릿함을 선사합니다"
         }
       },
       {
         name: "써니텐 파인애플향",
-        image: "image/brands/Product/product6-2.png",
+        image: "image/brands/product/product6-2.png",
         productDescription:{
           detail: "등하굣길, 심심할 때, 친구들과 함께 언제 어디서나 부담없이 즐기는 써니텐은 상콤달콤한 맛과 어우러진 짜릿함을 선사합니다"
         }
       },
       {
         name: "써니텐 포도향",
-        image: "image/brands/Product/product6-3.png",
+        image: "image/brands/product/product6-3.png",
         productDescription:{
           detail: "등하굣길, 심심할 때, 친구들과 함께 언제 어디서나 부담없이 즐기는 써니텐은 상콤달콤한 맛과 어우러진 짜릿함을 선사합니다"
         }
@@ -332,35 +332,35 @@ export const brandData = [
     products: [
       {
         name: "갈아만든 배",
-        image: "image/brands/Product/product7-1.png",
+        image: "image/brands/product/product7-1.png",
         productDescription:{
           detail: "아삭아삭한 배의 식감으로 오랜시간 사랑받은 갈아만든 배는\n국내 뿐 아니라 세계적으로 인정받은 과일주스입니다."
         }
       },
       {
         name: "갈아만든 배 저칼로리",
-        image: "image/brands/Product/product7-2.png",
+        image: "image/brands/product/product7-2.png",
         productDescription:{
           detail: "갈아만든 배의 시원한 배 맛은 그대로, 칼로리 부담은 DOWN!\n저칼로리로 가볍게 즐길 수 있습니다."
         }
       },
       {
         name: "갈배사이다",
-        image: "image/brands/Product/product7-3.png",
+        image: "image/brands/product/product7-3.png",
         productDescription:{
           detail: "갈아만든 배와 사이다를 접목시킨 갈배사이다는\n시원한 배향과 톡 쏘는 탄산이 어우러져 시원함과 상쾌함을 선사합니다."
         }
       },
       {
         name: "갈배사이다 제로",
-        image: "image/brands/Product/product7-4.png",
+        image: "image/brands/product/product7-4.png",
         productDescription:{
           detail: "시원 달콤한 배향에 짜릿한 탄산이 더해진 ‘갈배사이다’를\n제로 칼로리로 가볍게 즐길 수 있는 제품입니다."
         }
       },
       {
         name: "아이.디.에이치",
-        image: "image/brands/Product/product7-5.png",
+        image: "image/brands/product/product7-5.png",
         productDescription:{
           detail: "맛있는 배 퓨레 12%와 헛개나무과병추출분말이 2,460mg 함유된 아이.디.에이치\n시원한 배맛의 상쾌한 숙취해소음료입니다."
         }
@@ -383,28 +383,28 @@ export const brandData = [
     products: [
       {
         name: "씨그램 레몬",
-        image: "image/brands/Product/product10-1.png",
+        image: "image/brands/product/product10-1.png",
         productDescription:{
           detail: "천연 레몬향을 더해 상쾌하게 마지막까지 톡 쏘는 씨그램 레몬입니다."
         }
       },
       {
         name: "씨그램 플레인",
-        image: "image/brands/Product/product10-2.png",
+        image: "image/brands/product/product10-2.png",
         productDescription:{
           detail: "마지막까지 톡 쏘는 짜릿한 탄산수 씨그램입니다."
         }
       },
       {
         name: "씨그램 라임",
-        image: "image/brands/Product/product10-3.png",
+        image: "image/brands/product/product10-3.png",
         productDescription:{
           detail: "천연 라임향을 더해 상쾌하게 마지막까지 톡 쏘는 씨그램 레몬입니다."
         }
       },
       {
         name: "씨그램 피치",
-        image: "image/brands/Product/product10-4.png",
+        image: "image/brands/product/product10-4.png",
         productDescription:{
           detail: "천연 복숭아향이 상쾌함을 더하는 씨그램 피치입니다."
         }
@@ -427,35 +427,35 @@ export const brandData = [
     products: [
       {
         name: "파워에이드 마운틴 블라스트",
-        image: "image/brands/Product/product8-1.png",
+        image: "image/brands/product/product8-1.png",
         productDescription:{
           detail: "파워풀한 수분 충전, 몸과 마인드까지!\n오랜 시간 꾸준히 사랑받고 있는 파워에이드 마운틴 블라스트는\n체내 에너지 생성에 필요한 나이아신(비타민 B3)을 함유하고 있어\n파워풀한 수분 보충을 도와줍니다.\n활동 중 또는 운동 전후 상쾌하게 즐길 수 있습니다."
         }
       },
       {
         name: "파워에이드 퍼플 스톰",
-        image: "image/brands/Product/product8-2.png",
+        image: "image/brands/product/product8-2.png",
         productDescription:{
           detail: "파워풀한 수분 충전, 몸과 마인드까지!\n깔끔한 포도향으로 즐기는 파워에이드 퍼플 스톰은\n체내 에너지 생성에 필요한 나이아신(비타민 B3)을 함유하고 있어\n파워풀한 수분 보충을 도와줍니다.\n활동 중 또는 운동 전후 상쾌하게 즐길 수 있습니다."
         }
       },
       {
         name: "파워에이드 스칼렛 스톰",
-        image: "image/brands/Product/product8-3.png",
+        image: "image/brands/product/product8-3.png",
         productDescription:{
           detail: "파워풀한 수분 충전, 몸과 마인드까지!\n상큼한 복숭아향이 매력적인 파워에이드 스칼렛 스톰은\n체내 에너지 생성에 필요한 나이아신(비타민 B3)을 함유하고 있어\n파워풀한 수분 보충을 도와줍니다.\n활동 중 또는 운동 전후 상쾌하게 즐길 수 있습니다."
         }
       },
       {
         name: "파워에이드 제로",
-        image: "image/brands/Product/product8-4.png",
+        image: "image/brands/product/product8-4.png",
         productDescription:{
           detail: "파워풀한 수분 충전, 몸과 마인드까지!\n운동 중 손실되기 쉬운 수분을 칼로리 부담 없이 보충해줍니다.\n파워에이드 마운틴 블라스트의 깔끔한 맛은 유지하면서, 제로 칼로리로 부담 없이 즐길 수 있습니다."
         }
       },
       {
         name: "파워에이드 제로 라임향",
-        image: "image/brands/Product/product8-5.png",
+        image: "image/brands/product/product8-5.png",
         productDescription:{
           detail: "파워풀한 수분 충전, 몸과 마인드까지!\n운동 중 손실되기 쉬운 수분을 칼로리 부담 없이 보충해줍니다.\n상큼한 라임향을 제로 칼로리로 부담 없이 맛있게 즐길 수 있습니다."
         }
@@ -487,14 +487,14 @@ export const brandData = [
     products: [
       {
         name: "토레타!",
-        image: "image/brands/Product/product9-1.png",
+        image: "image/brands/product/product9-1.png",
         productDescription:{
           detail: "가벼운 일상, 이온보충 토레타!​\n저칼로리로 부담 없이, 일상에서 간편하고 가볍게 이온과 수분을 보충할 수 있습니다.\n10가지 과채 수분(총 과즙농축액 및 야채즙 0.4%)이 함유되어 상큼하게 즐길 수 있습니다."
         }
       },
       {
         name: "토레타! 제로",
-        image: "image/brands/Product/product9-2.png",
+        image: "image/brands/product/product9-2.png",
         productDescription:{
           detail: "가벼우니까, 제로니까 더 좋타!\n가벼워진 ‘토레타! 제로’는 제로 슈거, 제로 칼로리로 부담 없이 즐길 수 있는 수분보충음료입니다."
         }
@@ -526,14 +526,14 @@ export const brandData = [
     products: [
       {
         name: "강원평창수",
-        image: "image/brands/Product/product11-1.png",
+        image: "image/brands/product/product11-1.png",
         productDescription:{
           detail: "우리나라 대표 청정지역 강원도의 햇살과 바람이 만들어낸 맑고 깨끗한 물을 담아냈습니다.\n무라벨로 분리배출의 편의성을 높였습니다.  "
         }
       },
       {
         name: "강원평창수 먹는샘물",
-        image: "image/brands/Product/product11-2.png",
+        image: "image/brands/product/product11-2.png",
         productDescription:{
           detail: "강원도 평창군 봉평면에서 취수된 강원평창수는 깨끗하고 맑은 먹는 샘물입니다."
         }
@@ -556,28 +556,28 @@ export const brandData = [
     products: [
       {
         name: "휘오 순수",
-        image: "image/brands/Product/product12-1.png",
+        image: "image/brands/product/product12-1.png",
         productDescription:{
           detail: "2012년 국내 생수 제품 중 처음으로 ‘저탄소 제품 인증’을 받은 휘오 순수는 환경까지 생각한 먹는 샘물입니다."
         }
       },
       {
         name: "휘오 다이아몬드 EC",
-        image: "image/brands/Product/product12-2.png",
+        image: "image/brands/product/product12-2.png",
         productDescription:{
           detail: "휘오 다이아몬드 EC는 강원도 북쪽 끝 청정 자연 철원에서 탄생한 품격 있는 먹는샘물입니다."
         }
       },
       {
         name: "휘오 다이아몬드",
-        image: "image/brands/Product/product12-3.png",
+        image: "image/brands/product/product12-3.png",
         productDescription:{
           detail: "국내 1호 먹는 샘물로 허가 받은 휘오 다이아몬드는 30년 이상의 청정 샘물 노하우를 담았습니다."
         }
       },
       {
         name: "휘오 울림워터",
-        image: "image/brands/Product/product12-4.png",
+        image: "image/brands/product/product12-4.png",
         productDescription:{
           detail: "울릉도 대자연이 전하는 생명의 울림.\n화산섬 깊은 곳으로부터 스스로 솟아난 자연의 물, 휘오 울림워터."
         }
@@ -600,14 +600,14 @@ export const brandData = [
     products: [
       {
         name: "글라소비타민워터 에너지",
-        image: "image/brands/Product/product13-1.png",
+        image: "image/brands/product/product13-1.png",
         productDescription:{
           detail: "트로피컬 시트러스 맛의 글라소비타민워터 에너지는\n비타민 B와 과라나를 함유해 일상의 에너지를 충전해 줍니다."
         }
       },
       {
         name: "글라소비타민워터 파워씨",
-        image: "image/brands/Product/product13-2.png",
+        image: "image/brands/product/product13-2.png",
         productDescription:{
           detail: "드래곤후르츠 맛의 글라소비타민워터 파워씨는\n비타민C와 타우린을 함유해 일상에 활력을 더합니다."
         }
@@ -630,7 +630,7 @@ export const brandData = [
     products: [
       {
         name: "일로하스 피치",
-        image: "image/brands/Product/product20-1.png",
+        image: "image/brands/product/product20-1.png",
         productDescription:{
           detail: "천연 복숭아향으로 상큼하고 달콤한 맛이 특징인 일로하스 피치.\n부드러운 목 넘김으로 가벼운 수분 보충에도 딱!"
         }
@@ -654,98 +654,98 @@ export const brandData = [
     products: [
       {
         name: "조지아 리치 아로마 블랙",
-        image: "image/brands/Product/product14-1.png",
+        image: "image/brands/product/product14-1.png",
         productDescription:{
           detail: "조지아만의 원두 그라인딩향과 커피 추출향을 담은 ‘듀얼 아로마’로\n더욱 풍부한 아로마와 커피 맛을 선사합니다."
         }
       },
       {
         name: "조지아 리치 아로마 라떼",
-        image: "image/brands/Product/product14-2.png",
+        image: "image/brands/product/product14-2.png",
         productDescription:{
           detail: "커피 원두의 깊고 풍부한 아로마와 라떼의 부드럽고 고소한 맛을 담았습니다."
         }
       },
       {
         name: "조지아 리치 아로마 스위트 아메리카노",
-        image: "image/brands/Product/product14-3.png",
+        image: "image/brands/product/product14-3.png",
         productDescription:{
           detail: "풍부한 커피 아로마에 헤이즐넛과 아몬드 향을 더해 너티한 단맛을 제로 슈거로 즐길 수 있습니다."
         }
       },
       {
         name: "조지아 블랙",
-        image: "image/brands/Product/product14-4.png",
+        image: "image/brands/product/product14-4.png",
         productDescription:{
           detail: "‘듀얼 아로마’의 풍부한 커피 향과 함께 가볍고 깔끔하게 즐길 수 있는 블랙 커피입니다."
         }
       },
       {
         name: "조지아 라떼",
-        image: "image/brands/Product/product14-5.png",
+        image: "image/brands/product/product14-5.png",
         productDescription:{
           detail: "깔끔한 라떼의 맛과 부드러운 목넘김을 즐길 수 있습니다."
         }
       },
       {
         name: "조지아 콜드브루 블랙",
-        image: "image/brands/Product/product14-6.png",
+        image: "image/brands/product/product14-6.png",
         productDescription:{
           detail: "100% 콜드브루 방식으로 추출하여 커피 본연의 깔끔한 맛과 목넘김을 즐길 수 있습니다."
         }
       },
       {
         name: "조지아 저칼로리 라떼",
-        image: "image/brands/Product/product14-7.png",
+        image: "image/brands/product/product14-7.png",
         productDescription:{
           detail: "부드럽고 달콤한 맛은 살리고 칼로리는 기존 제품 대비 3분의 1로 줄여\n칼로리 부담 없이 즐길 수 있는 라떼입니다. "
         }
       },
       {
         name: "조지아 디카페인 블랙",
-        image: "image/brands/Product/product14-8.png",
+        image: "image/brands/product/product14-8.png",
         productDescription:{
           detail: "커피의 풍부한 맛과 향을 디카페인으로 부담 없이 즐길 수 있는 커피입니다."
         }
       },
       {
         name: "조지아 스위트 블랙",
-        image: "image/brands/Product/product14-9.png",
+        image: "image/brands/product/product14-9.png",
         productDescription:{
           detail: "커피의 풍부한 맛과 향을 담은 블랙 커피를 달콤하게 즐길 수 있습니다."
         }
       },
       {
         name: "조지아 아샷추",
-        image: "image/brands/Product/product14-10.png",
+        image: "image/brands/product/product14-10.png",
         productDescription:{
           detail: "커피와 달콤한 복숭아 아이스티의 만남!\n달달한 아이스티에 에스프레소 샷을 추가해\n복숭아의 달콤함과 커피의 고소함을 동시에 즐길 수 있습니다.\n제로 슈거로 부담 없이 가볍게!"
         }
       },
       {
         name: "조지아 에스프레소 액상스틱",
-        image: "image/brands/Product/product14-11.png",
+        image: "image/brands/product/product14-11.png",
         productDescription:{
           detail: "때로는 라떼로, 때로는 아포가토로!\n에스프레소 방식으로 추출한 액상을 그대로 스틱에 담아\n언제든 빠르고 간편하게 카페처럼 다양한 커피를 만들 수 있습니다."
         }
       },
       {
         name: "조지아 오리지널",
-        image: "image/brands/Product/product14-12.png",
+        image: "image/brands/product/product14-12.png",
         productDescription:{
           detail: "간편하게 즐기는 조지아 캔 커피.\n풍부한 맛과 향이 어우러지는 깔끔하고 깊은 풍미"
         }
       },
       {
         name: "조지아 카페라떼",
-        image: "image/brands/Product/product14-13.png",
+        image: "image/brands/product/product14-13.png",
         productDescription:{
           detail: "간편하게 즐기는 조지아 캔 커피.\n풍부한 맛과 향이 어우러지는 커피와 우유의 만남"
         }
       },
       {
         name: "조지아 맥스커피",
-        image: "image/brands/Product/product14-14.png",
+        image: "image/brands/product/product14-14.png",
         productDescription:{
           detail: "간편하게 즐기는 조지아 캔 커피.\n깊고 진한 조지아 맥스 커피로 기분을 UP!\n강렬한 커피와 부드러운 우유의 매력적인 조화"
         }
@@ -768,63 +768,63 @@ export const brandData = [
     products: [
       {
         name: "미닛메이드 시그니처",
-        image: "image/brands/Product/product15-1.png",
+        image: "image/brands/product/product15-1.png",
         productDescription:{
           detail: "온 가족의 하루를 상큼하게 시작해요!\n시그니처 오렌지와 포도의 기분 좋은 상큼함!\n정상적인 면역 기능에 필요한 아연도 함유되어 있어요."
         }
       },
       {
         name: "미닛메이드 프루티",
-        image: "image/brands/Product/product15-2.png",
+        image: "image/brands/product/product15-2.png",
         productDescription:{
           detail: "온 가족의 하루를 상큼하게 시작해요!\n가볍게, 상큼하게 즐기는 프루티-오렌지와 포도!​\n정상적인 면역 기능에 필요한 아연도 함유되어 있어요."
         }
       },
       {
         name: "미닛메이드",
-        image: "image/brands/Product/product15-3.png",
+        image: "image/brands/product/product15-3.png",
         productDescription:{
           detail: "온 가족의 하루를 상큼하게 시작해요!\n달콤함으로 기분 전환하는 주스 음료!​\n정상적인 면역 기능에 필요한 아연도 함유되어 있어요."
         }
       },
       {
         name: "미닛메이드 조이",
-        image: "image/brands/Product/product15-4.png",
+        image: "image/brands/product/product15-4.png",
         productDescription:{
           detail: "일상의 즐거움을 함께 해요!\n아이부터 어른까지, 남녀노소 누구나 간편하게 즐길 수 있어요."
         }
       },
       {
         name: "미닛메이드 쿠우젤리",
-        image: "image/brands/Product/product15-5.png",
+        image: "image/brands/product/product15-5.png",
         productDescription:{
           detail: "맛과 재미를 동시에!\n새콤달콤 과즙, 말랑말랑 씹는 재미!\n그리고 칼슘까지 더해 어린이 간식으로 좋아요."
         }
       },
       {
         name: "미닛메이드 쿠우",
-        image: "image/brands/Product/product15-6.png",
+        image: "image/brands/product/product15-6.png",
         productDescription:{
           detail: "미닛메이드의 노하우와 철학을 담은 어린이 음료 미닛메이드 쿠우! ​\n상큼한 오렌지와 포도맛으로 기분 좋게 하루를 시작해요."
         }
       },
       {
         name: "미닛메이드 레몬에이드",
-        image: "image/brands/Product/product15-7.png",
+        image: "image/brands/product/product15-7.png",
         productDescription:{
           detail: "레몬과 만난 상큼한 순간!\n레몬 과즙이 함유되어 더 상큼하게 만나는 미닛메이드 레몬에이드"
         }
       },
       {
         name: "미닛메이드 제로 에이드",
-        image: "image/brands/Product/product15-8.png",
+        image: "image/brands/product/product15-8.png",
         productDescription:{
           detail: "과일과 만난 상큼한 순간!\n제로 슈거로 가볍게, 과즙으로 상큼하게!"
         }
       },
       {
         name: "미닛메이드 허니&유자,모과&생강",
-        image: "image/brands/Product/product15-9.png",
+        image: "image/brands/product/product15-9.png",
         productDescription:{
           detail: "달콤하게 따뜻한 하루를 시작해보세요! ​\n달콤한 꿀맛과 상큼한 유자향의 상큼달콤한 조합과\n달콤한 모과향과 쌉쌀한 생강향의 달콤쌉쌀한 조합!"
         }
@@ -847,42 +847,42 @@ export const brandData = [
     products: [
       {
         name: "코코팜 포도",
-        image: "image/brands/Product/product16-1.png",
+        image: "image/brands/product/product16-1.png",
         productDescription:{
           detail: "상큼한 과즙 속 탱글탱글 씹히는 나타드코코 젤리가 재미있는 ‘코코팜’.\n싱그러운 청포도 과즙의 ‘코코팜 포도’"
         }
       },
       {
         name: "코코팜 망고코넛",
-        image: "image/brands/Product/product16-2.png",
+        image: "image/brands/product/product16-2.png",
         productDescription:{
           detail: "상큼한 과즙 속 탱글탱글 씹히는 나타드코코 젤리가 재미있는 ‘코코팜’.\n열대과일 망고 퓨레가 더해진 ‘코코팜 망고코넛’"
         }
       },
       {
         name: "코코팜 피치핑크",
-        image: "image/brands/Product/product16-3.png",
+        image: "image/brands/product/product16-3.png",
         productDescription:{
           detail: "상큼한 과즙 속 탱글탱글 씹히는 나타드코코 젤리가 재미있는 ‘코코팜’.\n달콤한 복숭아 과즙의 ‘코코팜 복숭아’"
         }
       },
       {
         name: "코코팜 화이트 요구르트",
-        image: "image/brands/Product/product16-4.png",
+        image: "image/brands/product/product16-4.png",
         productDescription:{
           detail: "상큼한 과즙 속 탱글탱글 씹히는 나타드코코 젤리가 재미있는 ‘코코팜’.\n새콤달콤한 요구르트 맛의 ‘코코팜 화이트 요구르트’"
         }
       },
       {
         name: "커졌다! 코코팜 포도",
-        image: "image/brands/Product/product16-5.png",
+        image: "image/brands/product/product16-5.png",
         productDescription:{
           detail: "상큼한 포도 과즙 속 탱글탱글 씹히는 나타드코코 젤리는 더 커지고 칼로리는 줄었다!"
         }
       },
       {
         name: "커졌다! 코코팜 망고코넛",
-        image: "image/brands/Product/product16-6.png",
+        image: "image/brands/product/product16-6.png",
         productDescription:{
           detail: "상큼한 포도 과즙 속 탱글탱글 씹히는 나타드코코 젤리는 더 커지고 칼로리는 줄었다!"
         }
@@ -905,7 +905,7 @@ export const brandData = [
     products: [
       {
         name: "과일촌 아침에사과",
-        image: "image/brands/Product/product17-1.png",
+        image: "image/brands/product/product17-1.png",
         productDescription:{
           detail: "산뜻하고 달달한 사과 과즙을 함유한 과일촌 아침에 사과는\n부담없이 마실 수 있는 일상 과즙 음료입니다."
         }
@@ -929,7 +929,7 @@ export const brandData = [
     products: [
       {
         name: "태양의 식후비법 W차",
-        image: "image/brands/Product/product18-1.png",
+        image: "image/brands/product/product18-1.png",
         productDescription:{
           detail: "태양의 식후비법 W차는 1일 영양성분 기준치의 51%인 \n12.7g의 풍부한 식이섬유가 들어있어\n식사 후 깔끔한 마무리에 도움을 줍니다."
         }
@@ -953,7 +953,7 @@ export const brandData = [
     products: [
       {
         name: "태양의 마테차",
-        image: "image/brands/Product/product19-1.png",
+        image: "image/brands/product/product19-1.png",
         productDescription:{
           detail: "태양의 마테차는 남미 브라질산과 아르헨티나산 마테잎을 추출해 깔끔한 맛과 향을 담았습니다."
         }
