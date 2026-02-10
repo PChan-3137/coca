@@ -7,12 +7,15 @@
 @use 'header_footer/header';
 @use 'header_footer/footer';
 @use 'index/video-section';
-@use 'index/sustainability.scss';
+@use 'index/sustainability';
+@use 'index/brand-story';
+@use 'index/history-cta';
 
 .header{
   background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 80%);
   border-bottom: 2px solid v.$c-text-darkgray;
   margin-bottom: 1200px;
+  // 임시 마진
   nav{
     .nav-menu{
       color: v.$c-text-white;
@@ -49,3 +52,4 @@
     }
   }
 }
+
