@@ -60,3 +60,36 @@
   
   window.addEventListener("scroll", checkScroll);  // ← 스크롤 이벤트 추가
 })();
+
+
+
+const section = document.querySelector(".magic-video");
+const box = document.querySelector(".magic-video-box");
+
+window.addEventListener("scroll", () => {
+  const rect = section.getBoundingClientRect();
+  const vh = window.innerHeight;
+  const vw = window.innerWidth;
+
+  // 50% 지점부터 진행
+  let progress = (vh * 0.3 - rect.top) / (rect.height - vh * 0.5);
+  progress = Math.max(0, Math.min(1, progress)); 
+  progress = 1 - Math.pow(1 - progress, 3); 
+
+  let videoWidth, videoHeight;
+
+  if (progress < 0.5) {
+    let t = progress / 0.5;
+    videoWidth = vw - (vw - vh) * t;
+    videoHeight = vh;
+  } else {
+    let t = (progress - 0.5) / 0.5;
+    videoWidth = vh - (vh - 400) * t;
+    videoHeight = videoWidth;
+  }
+
+  box.style.width = videoWidth + "px";
+  box.style.height = videoHeight + "px";
+
+  section.classList.toggle("active", progress > 0.6);
+});
