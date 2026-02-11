@@ -89,6 +89,12 @@ function updateActiveGrid() {
   });
 }
 
+const tabswrap = document.querySelector('.brand-tabs-wrap');
+tabswrap.addEventListener('click', () =>{
+  tabswrap.classList.toggle('open');
+})
+
+
 renderBrandTabs();
 renderGrid();
 setActiveProduct(activeIndex);
