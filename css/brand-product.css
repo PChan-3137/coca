@@ -782,7 +782,8 @@ body {
   aspect-ratio: 1/1;
   display: flex;
   align-items: center;
-  width: 440px;
+  width: 400px;
+  padding: 40px;
   margin: 0 auto;
   border-radius: 44px;
   box-shadow: inset 15px 15px 45px #fcdada, inset -15px -15px 45px #fcdada;
@@ -889,6 +890,7 @@ body {
   }
   .brand-product .product-view .product-image {
     width: 320px;
+    padding: 25px;
   }
   .brand-product .product-view .product-image img {
     scale: 0.9;

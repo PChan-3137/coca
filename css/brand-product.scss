@@ -107,7 +107,8 @@ body{
       aspect-ratio: 1 / 1;
       display: flex;
       align-items: center;
-      width: 440px;
+      width: 400px;
+      padding: 40px;
       margin: 0 auto;
       border-radius: 44px;
       box-shadow: inset 15px 15px 45px #fcdada,
@@ -225,6 +226,7 @@ body{
     .product-view{
       .product-image{
         width: 320px;
+        padding: 25px;
         img{
           scale: (0.9);
         }
