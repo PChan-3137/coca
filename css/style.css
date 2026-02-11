@@ -749,7 +749,6 @@ table {
 }
 .magic-video .magic-left,
 .magic-video .magic-right {
-  width: 220px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -758,24 +757,26 @@ table {
   white-space: nowrap;
 }
 .magic-video .magic-left {
-  right: calc(100% + 24px);
+  right: calc(100% + 100px);
   text-align: right;
 }
 .magic-video .magic-left h2 {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 700;
 }
 .magic-video .magic-left p {
   font-family: "Playfair Display", serif;
-  margin-top: 6px;
+  font-size: 24px;
+  margin-top: 12px;
   font-weight: 700;
 }
 .magic-video .magic-right {
   left: calc(100% + 24px);
-  max-width: 360px;
-  font-size: 16px;
+  max-width: 200px;
+  font-size: 24px;
   line-height: 1.6;
   word-break: keep-all;
+  white-space: nowrap;
 }
 .magic-video .magic-right strong {
   font-weight: bold;
@@ -854,8 +855,15 @@ table {
   .magic-video .magic-left {
     top: calc(50% - 320px);
   }
+  .magic-video .magic-left h2 {
+    font-size: 24px;
+  }
+  .magic-video .magic-left p {
+    font-size: 16px;
+  }
   .magic-video .magic-right {
     top: calc(50% + 260px);
+    font-size: 14px;
   }
   .magic-video .magic-video-btn {
     margin-top: 180px;

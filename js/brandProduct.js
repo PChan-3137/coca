@@ -1,10 +1,9 @@
 import { brandData } from "./brandData.js";
 
-/* ===============================
-  URL 파라미터
-  brand=coca-cola
-  product=2
-================================ */
+// URL 파라미터
+// brand=coca-cola
+// product=2
+
 const params = new URLSearchParams(window.location.search);
 const brandId = params.get("id");
 const productIndex = Number(params.get("product")) || 0;
