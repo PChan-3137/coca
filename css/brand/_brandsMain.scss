@@ -6,28 +6,26 @@
 .title-location {
   display: flex;
   flex-direction: column;
-  gap: v.$fs-re;
-  margin:160px 0;
+  gap: 18px;
   text-align: center;
+  margin: 160px 0;
   justify-content: center;
-
-  .locate {
+  
+  .locate{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6px;
-
-    img {
-      width: 24px;
-      height: 21px;
-    }
+    font-weight: 500;
+    font-size: 18px;
+    img {width: 24px;height: 21px;}
   }
 
   .brand-title {
     margin-top: 10px;
-    min-height: 80px;
+    // min-height: 80px;
+    text-align: center;
     font-size: v.$subpage-title;
-    font-weight: v.$fw-title;
+    font-weight: v.$fw-title
   }
 }
 

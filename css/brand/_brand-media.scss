@@ -10,7 +10,7 @@
 .media {
   display: flex;
   flex-direction: column;
-
+  
   .image-wrap {
     padding: 160px 0 80px;
     background-image: url(../image/brands/media.png);
@@ -27,7 +27,8 @@
         top: -20%;
         color: v.$c-text-white;
         font-size: v.$section-title;
-
+        font-weight: v.$fw-title-sm;
+        -webkit-text-stroke: 2px black;
         @include r.mobile-lg {
           top: -15%;
           left: 50%;
@@ -66,10 +67,10 @@
             content: attr(data-title);
             position: absolute;
             left: 0;
-            bottom: 0%;
+            bottom: 0;
             width: 100%;
             padding: 15px 14px 30px;
-            background: rgba(255, 255, 255, 0.644);
+            background: #ffffffa4;
             backdrop-filter: blur(5px);
             color: #111;
             font-size: 18px;
@@ -77,6 +78,7 @@
             opacity: 0;
             transition:  0.3s;
             z-index: -1;
+            cursor: pointer;
           }
           &:hover::before {
             opacity: 1;

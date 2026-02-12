@@ -139,15 +139,16 @@ table {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  margin: 160px 0;
   text-align: center;
+  margin: 160px 0;
   justify-content: center;
 }
 .title-location .locate {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6px;
+  font-weight: 500;
+  font-size: 18px;
 }
 .title-location .locate img {
   width: 24px;
@@ -155,7 +156,7 @@ table {
 }
 .title-location .brand-title {
   margin-top: 10px;
-  min-height: 80px;
+  text-align: center;
   font-size: 64px;
   font-weight: 800;
 }

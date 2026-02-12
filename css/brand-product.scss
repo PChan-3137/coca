@@ -22,12 +22,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 500;
+    font-size: 18px;
     img {width: 24px;height: 21px;}
   }
 
   .brand-title {
     margin-top: 10px;
-    min-height: 80px;
+    // min-height: 80px;
     text-align: center;
     font-size: v.$subpage-title;
     font-weight: v.$fw-title

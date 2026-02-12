@@ -35,6 +35,8 @@ $product-center-offset:
       left: 0;
       color: v.$c-text-white;
       font-size: v.$section-title;
+      font-weight: v.$fw-title-sm;
+      -webkit-text-stroke: 2px black;
       @include r.mobile-lg{
         left: 50%;
         transform: translateX(-50%);

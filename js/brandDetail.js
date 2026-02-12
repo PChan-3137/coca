@@ -117,7 +117,7 @@ if (!brand.media || brand.media.length === 0) {
 } else {
   brand.media.forEach(m => {
     const item = document.createElement("a");
-    item.href = m.link;
+    // item.href = m.link;
     item.target = "_blank";
     item.dataset.title = m.mediatitle;
     const img = document.createElement("img");
