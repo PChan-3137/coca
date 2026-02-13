@@ -74,12 +74,16 @@ body {
         height: auto;
         margin-bottom: 50px;
         display: none;
-
         @include r.tablet {
             width: 90%;
         }
         @include r.mobile-lg{
             width: 95%;
+        }
+        @include r.mobile-sm{
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
         }
         &.active {
             display: block;

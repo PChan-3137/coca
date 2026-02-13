@@ -1,5 +1,4 @@
-const IMG_BASE = "../image/history-image/";
-
+const IMG_BASE = location.pathname.includes('/html/') ? '../image/history-image/' : 'image/history-image/';
 const historyData = [
   {
     yearLabel: "1886",
