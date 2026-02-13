@@ -747,6 +747,11 @@ body {
     margin-bottom: 80px;
   }
 }
+@media (max-width: 768px) {
+  .brand-news-main {
+    margin-left: 0;
+  }
+}
 .brand-news-main .header-title {
   font-size: 64px;
   font-weight: 800;

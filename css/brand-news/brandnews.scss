@@ -40,6 +40,9 @@ body {
         width: 100%;
         margin-bottom: 80px
     }
+    @include r.mobile-lg{
+        margin-left: 0;
+    }
 
     .header-title {
         @include m.subpage-title;
