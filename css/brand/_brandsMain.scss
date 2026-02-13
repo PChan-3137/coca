@@ -26,6 +26,16 @@
     text-align: center;
     font-size: v.$subpage-title;
     font-weight: v.$fw-title
+
+  }
+  @include r.tablet{
+    margin: 120px 0;
+
+  }
+  @include r.mobile-sm{
+    .brand-title{
+      font-size: 32px;
+    }
   }
 }
 
@@ -62,6 +72,24 @@
       font-weight: 600;
       border-color: v.$c-brand-primary;
       z-index: 2;
+    }
+  }
+  @include r.mobile-lg{
+    gap: 15px;
+    .tab{
+      padding: 4px 8px;
+      font-size: 16px;
+      &.acitve{
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+  @include r.mobile-sm{
+    gap: 10px;
+    .tab{
+      padding: 3px 6px;
+      font-size: 14px;
     }
   }
 }

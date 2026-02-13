@@ -652,6 +652,7 @@ table {
     gap: 8px;
   }
   .header .header-wrap .menu-toggle span {
+    color: #0F0F0F;
     width: 32px;
     height: 3px;
     background-color: #0F0F0F;
@@ -685,12 +686,9 @@ table {
   .header .header-wrap .menu-toggle span {
     width: 32px;
     height: 3px;
-    background-color: #FFFFFF;
+    background-color: #0F0F0F;
     border-radius: 4px;
     transition: 0.2s;
-  }
-  .header .header-wrap .menu-toggle.active {
-    border: 1px solid #E31D2E;
   }
   .header .header-wrap .menu-toggle.active span:nth-child(1) {
     background-color: #E31D2E;
@@ -1104,6 +1102,16 @@ body {
   text-align: center;
   font-size: 64px;
   font-weight: 800;
+}
+@media (max-width: 1024px) {
+  .title-location {
+    margin: 120px 0;
+  }
+}
+@media (max-width: 440px) {
+  .title-location .brand-title {
+    font-size: 32px;
+  }
 }
 
 .inner {

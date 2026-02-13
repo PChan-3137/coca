@@ -138,11 +138,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center ;
+        align-items: center;
         gap: 8px;
         
-
+        
         span {
+          color: v.$c-text-black;
           width: 32px;
           height: 3px;
           background-color: v.$c-text-black;
@@ -191,13 +192,12 @@
         span {
           width: 32px;
           height: 3px;
-          background-color: v.$c-text-white;
+          background-color: v.$c-text-black;
           border-radius: v.$ra-sm;
           transition: 0.2s;
         }
 
         &.active {
-          border: 1px solid v.$c-brand-primary;
 
           span {
             &:nth-child(1) {

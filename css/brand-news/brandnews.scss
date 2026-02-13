@@ -610,7 +610,7 @@ body {
                 .brand-news-title {
                     font-weight: v.$fw-title-sm;
                     font-size: v.$section-title;
-                    margin-bottom: v.$content-sm2;
+                    margin-bottom: v.$content-sm;
                     @include r.mobile-sm{
                         font-size: 26px;
                         margin-bottom: 8px;
@@ -701,7 +701,7 @@ body {
                         border-radius: v.$ra-lg;
                         overflow: hidden;
                         height: 385px;
-                        margin-bottom: v.$content-sm2;
+                        margin-bottom: v.$content-sm;
 
                         @include r.mobile-lg {
                             height: 230px;
@@ -755,7 +755,7 @@ body {
 
                 @include r.mobile-lg {
                     // display: flex;
-                    width: 100%;
+                    width: 90%;
                 }
             }
         }
@@ -772,7 +772,7 @@ body {
             .media-section-title {
                 font-weight: v.$fw-title-sm;
                 font-size: v.$section-title;
-                margin-bottom: v.$content-sm2;
+                margin-bottom: v.$content-sm;
                 font-family: v.$ff-kr;
                 @include r.mobile-sm{
                     font-size: 26px;
@@ -839,7 +839,7 @@ body {
                 @include m.slide-bg-btn;
 
                 @include r.mobile-lg {
-                    width: 100%;
+                    width: 90%;
 
                 }
 

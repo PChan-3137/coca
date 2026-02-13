@@ -33,8 +33,19 @@ body{
     text-align: center;
     font-size: v.$subpage-title;
     font-weight: v.$fw-title
+
+  }
+  @include r.tablet{
+    margin: 120px 0;
+
+  }
+  @include r.mobile-sm{
+    .brand-title{
+      font-size: 32px;
+    }
   }
 }
+
 
 .brand-product {
   padding: 0 0 160px;
