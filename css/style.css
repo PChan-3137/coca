@@ -148,9 +148,6 @@ table {
 .header .header-wrap {
   max-width: 1610px;
   margin: 0 155px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 8px;
 }
 @media (max-width: 1024px) {
   .header .header-wrap {
@@ -169,6 +166,11 @@ table {
     max-width: 392px;
     margin: 0 24px;
   }
+}
+.header .header-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
 }
 .header .header-wrap .logo a img {
   width: 264px;
@@ -435,7 +437,6 @@ table {
 .footer .footer-wrap {
   max-width: 1610px;
   margin: 0 155px;
-  padding: 40px 0;
 }
 @media (max-width: 1024px) {
   .footer .footer-wrap {
@@ -454,6 +455,9 @@ table {
     max-width: 392px;
     margin: 0 24px;
   }
+}
+.footer .footer-wrap {
+  padding: 40px 0;
 }
 .footer .footer-wrap .active-section {
   display: flex;
@@ -801,13 +805,6 @@ table {
   font-family: "Escoredream";
   cursor: pointer;
   transition: background-position 0.35s ease, color 0.25s ease, border-color 0.25s ease;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0 20px;
-  margin-top: 100px;
-  cursor: pointer;
 }
 .magic-video-btn:hover {
   background-position: left bottom;
@@ -824,6 +821,15 @@ table {
     padding: 12px 18px;
     font-size: 16px;
   }
+}
+.magic-video-btn {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 20px;
+  margin-top: 100px;
+  cursor: pointer;
 }
 .magic-video-btn img {
   width: 48px;
@@ -889,9 +895,6 @@ table {
   width: 50%;
   overflow: hidden;
   transition: 0.5s ease;
-  /* 회색 오버레이 */
-  /* 코너 오버레이 */
-  /* 중앙 콘텐츠 */
 }
 .s-item .bg {
   position: absolute;
@@ -900,11 +903,17 @@ table {
   height: 100%;
   object-fit: cover;
 }
+.s-item {
+  /* 회색 오버레이 */
+}
 .s-item .overlay.gray {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
   z-index: 1;
+}
+.s-item {
+  /* 코너 오버레이 */
 }
 .s-item .overlay.corner {
   position: absolute;
@@ -929,6 +938,9 @@ table {
 }
 .s-item:hover {
   width: 90%;
+}
+.s-item {
+  /* 중앙 콘텐츠 */
 }
 .s-item .content {
   position: absolute;
@@ -1018,10 +1030,6 @@ table {
 .brand-story .brand-story-inner {
   max-width: 1610px;
   margin: 0 155px;
-  display: flex;
-  justify-content: space-between;
-  gap: 45px;
-  height: 100%;
 }
 @media (max-width: 1024px) {
   .brand-story .brand-story-inner {
@@ -1040,6 +1048,12 @@ table {
     max-width: 392px;
     margin: 0 24px;
   }
+}
+.brand-story .brand-story-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+  height: 100%;
 }
 @media (max-width: 1024px) {
   .brand-story .brand-story-inner {
@@ -1154,8 +1168,6 @@ table {
   font-family: "Escoredream";
   cursor: pointer;
   transition: background-position 0.35s ease, color 0.25s ease, border-color 0.25s ease;
-  display: flex;
-  font-size: 20px;
 }
 .brand-story .brand-story-inner .brand-story-title .morbtn:hover {
   background-position: left bottom;
@@ -1172,6 +1184,10 @@ table {
     padding: 12px 18px;
     font-size: 16px;
   }
+}
+.brand-story .brand-story-inner .brand-story-title .morbtn {
+  display: flex;
+  font-size: 20px;
 }
 @media (max-width: 440px) {
   .brand-story .brand-story-inner .brand-story-title .morbtn {
@@ -1354,10 +1370,6 @@ table {
 .history-cta .row {
   max-width: 1610px;
   margin: 0 155px;
-  display: flex;
-  align-items: center;
-  gap: 48px;
-  justify-content: space-around;
 }
 @media (max-width: 1024px) {
   .history-cta .row {
@@ -1376,6 +1388,12 @@ table {
     max-width: 392px;
     margin: 0 24px;
   }
+}
+.history-cta .row {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  justify-content: space-around;
 }
 @media (max-width: 768px) {
   .history-cta .row {
@@ -1512,11 +1530,6 @@ table {
   font-family: "Escoredream";
   cursor: pointer;
   transition: background-position 0.35s ease, color 0.25s ease, border-color 0.25s ease;
-  font-family: "Escoredream";
-  font-weight: 500;
-  font-size: 20px;
-  margin-left: 260px;
-  margin-top: 35px;
 }
 .history-cta .btn:hover {
   background-position: left bottom;
@@ -1533,6 +1546,13 @@ table {
     padding: 12px 18px;
     font-size: 16px;
   }
+}
+.history-cta .btn {
+  font-family: "Escoredream";
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 260px;
+  margin-top: 35px;
 }
 @media (max-width: 768px) {
   .history-cta .btn {
@@ -1761,9 +1781,6 @@ table {
 .brands .brands-inner {
   max-width: 1610px;
   margin: 0 155px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 @media (max-width: 1024px) {
   .brands .brands-inner {
@@ -1782,6 +1799,11 @@ table {
     max-width: 392px;
     margin: 0 24px;
   }
+}
+.brands .brands-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .brands .brands-inner .tab-img-wrap {
   display: none;

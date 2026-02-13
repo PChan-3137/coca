@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brands</title>
-  <link rel="stylesheet" href="css/brands.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history</title>
+    <link rel="stylesheet" href="css/history/history.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 </head>
+
 <body>
   <header class="header">
     <div class="header-wrap">
@@ -85,48 +91,52 @@
       </div>
     </div>
   </div>
-  
-  <section class="title-location">
-    <div class="locate">
-      <img src="image/home-icon.png" alt=""> / Brands
-    </div>
-    <h1 class="brand-title">브랜드</h1>
-  </section>
-  <section id="content">
-    <ul class="tabs">
-      <li class="tab active" data-category="sparkling">Sparkling</li>
-      <li class="tab" data-category="sports">Sports</li>
-      <li class="tab" data-category="coffee">Coffees</li>
-      <li class="tab" data-category="juice">Juices</li>
-      <li class="tab" data-category="tea">Teas</li>
-    </ul>
-    <div class="content-inner">
-      <div class="grid" id="brandGrid"></div>
-    </div>
-  </section>
+    <!-- 서브페이지 타이틀 -->
+    <section class="main-title">
+        <div class="header-title">
+            <div class="header-sub-title">
+                <img src="image/news-image/home-icon.png" alt="홈 아이콘">
+                / Our conpany / Brand history
+            </div>
+            Brand history
+        </div>
+    </section>
+    <!-- 섹션1 -->
+    <section class="history" id="history">
+        <div class="history__inner">
+            <!-- 타임라인(회색/빨간선/점) -->
+            <div class="history__rail" aria-hidden="true">
+                <span class="history__rail-gray"></span>
+                <span class="history__rail-red"></span>
+                <span class="history__dot"></span>
+            </div>
 
-  <section class="location-btns">
-    <a href="history.html" class="location-btn">
-      <div class="location-img-box">
-        <img src="image/introduction-image/location-img-history.png" alt="서브페이지 이동 이미지">
-      </div>
-      <div class="location-text location-text-left">
-        <img src="image/location-arrow-left.png" alt="서브페이지 이동 방향 화살표">
-        <p class="location-title">history</p>
-      </div>
-    </a>
-    <a href="brandnews.html" class="location-btn">
-      <div class="location-img-box">
-        <img src="image/brands/brandstory.png" alt="서브페이지 이동 이미지">
-      </div>
-      <div class="location-text location-text-right">
-        <p class="location-title">brand&nbsp;story</p>
-        <img src="image/location-arrow-right.png" alt="서브페이지 이동 방향 화살표">
-      </div>
-    </a>
-  </section>
-
-  <!-- 푸터 -->
+            <!-- JS가 여기 렌더 -->
+            <div class="history__list" id="historyList"></div>
+        </div>
+    </section>
+    <!-- 로케이션 -->
+    <section class="location-btns">
+        <a href="brandintroduction.html" class="location-btn">
+            <div class="location-img-box">
+                <img src="image/brands/ourcompany.png" alt="서브페이지 이동 이미지">
+            </div>
+            <div class="location-text location-text-left">
+                <img src="image/location-arrow-left.png" alt="서브페이지 이동 방향 화살표">
+                <p class="location-title">our&nbsp;company</p>
+            </div>
+        </a>
+        <a href="brands.html" class="location-btn">
+            <div class="location-img-box">
+                <img src="image/news-image/location-img-brands.png" alt="서브페이지 이동 이미지">
+            </div>
+            <div class="location-text location-text-right">
+                <p class="location-title">brands</p>
+                <img src="image/location-arrow-right.png" alt="서브페이지 이동 방향 화살표">
+            </div>
+        </a>
+    </section>
+    <!-- 푸터 -->
   <footer class="footer">
     <div class="footer-wrap">
      <div class="active-section">
@@ -170,7 +180,10 @@
       <p class="website-right">©2026 The Coca-Cola Company 판권소유</p>
     </div>
   </footer>
-  <script type="module" src="js/brands.js"></script>
-  <script src="js/common.js"></script>
+    <script src="js/historyData.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/common.js"></script>
+    
 </body>
+
 </html>
