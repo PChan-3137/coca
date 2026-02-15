@@ -148,6 +148,9 @@ table {
 .header .header-wrap {
   max-width: 1610px;
   margin: 0 155px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
 }
 @media (max-width: 1024px) {
   .header .header-wrap {
@@ -166,11 +169,6 @@ table {
     max-width: 392px;
     margin: 0 24px;
   }
-}
-.header .header-wrap {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 8px;
 }
 .header .header-wrap .logo a img {
   width: 264px;
@@ -435,6 +433,7 @@ table {
 .footer .footer-wrap {
   max-width: 1610px;
   margin: 0 155px;
+  padding: 40px 0;
 }
 @media (max-width: 1024px) {
   .footer .footer-wrap {
@@ -453,9 +452,6 @@ table {
     max-width: 392px;
     margin: 0 24px;
   }
-}
-.footer .footer-wrap {
-  padding: 40px 0;
 }
 .footer .footer-wrap .active-section {
   display: flex;
@@ -719,6 +715,7 @@ body {
   font-family: "Escoredream";
   max-width: 1610px;
   margin: 0 155px;
+  margin-bottom: 80px;
 }
 @media (max-width: 1024px) {
   .brand-news-main {
@@ -737,9 +734,6 @@ body {
     max-width: 392px;
     margin: 0 24px;
   }
-}
-.brand-news-main {
-  margin-bottom: 80px;
 }
 @media (max-width: 1024px) {
   .brand-news-main {
@@ -1706,6 +1700,9 @@ body {
 .brand-news-main .inner .brand-news .brand-news-content.on::before {
   display: none;
 }
+.brand-news-main .inner .brand-news .brand-news-content .news-content-card {
+  cursor: pointer;
+}
 .brand-news-main .inner .brand-news .brand-news-content .news-content-card:hover .news-card-img {
   position: relative;
   transition: 0.3s;
@@ -1730,9 +1727,6 @@ body {
 }
 .brand-news-main .inner .brand-news .brand-news-content .news-content-card:hover .news-card-title {
   color: #E31D2E;
-}
-.brand-news-main .inner .brand-news .brand-news-content .news-content-card {
-  cursor: pointer;
 }
 .brand-news-main .inner .brand-news .brand-news-content .news-content-card .news-card-img {
   border-radius: 12px;
@@ -1802,6 +1796,8 @@ body {
   font-family: "Escoredream";
   cursor: pointer;
   transition: background-position 0.35s ease, color 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  justify-self: center;
 }
 .brand-news-main .inner .brand-news .news-more-btn:hover {
   background-position: left bottom;
@@ -1818,10 +1814,6 @@ body {
     padding: 12px 18px;
     font-size: 16px;
   }
-}
-.brand-news-main .inner .brand-news .news-more-btn {
-  display: flex;
-  justify-self: center;
 }
 @media (max-width: 768px) {
   .brand-news-main .inner .brand-news .news-more-btn {

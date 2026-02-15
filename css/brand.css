@@ -16,6 +16,7 @@
   justify-content: center;
   overflow: hidden;
   /* 실제 크기 변화 대상 */
+  /* 텍스트 */
 }
 .hero-inner {
   position: relative;
@@ -47,9 +48,6 @@
   transition: background 0.8s ease;
   z-index: 2;
   pointer-events: none;
-}
-.hero {
-  /* 텍스트 */
 }
 .hero-text {
   position: absolute;
@@ -122,6 +120,8 @@
   position: relative;
   overflow: hidden;
   padding: 40px 0;
+  /* 네비게이션 버튼 */
+  /* 슬라이드 카드 */
 }
 @media (max-width: 1024px) {
   .productSwiper {
@@ -135,9 +135,6 @@
 }
 .productSwiper .swiper-wrapper {
   align-items: center;
-}
-.productSwiper {
-  /* 네비게이션 버튼 */
 }
 .productSwiper .swiper-btn {
   position: absolute;
@@ -165,9 +162,6 @@
   .productSwiper .swiper-btn {
     display: none;
   }
-}
-.productSwiper {
-  /* 슬라이드 카드 */
 }
 .productSwiper .swiper-slide {
   width: 260px;
@@ -350,6 +344,8 @@
   font-family: "Escoredream";
   cursor: pointer;
   transition: background-position 0.35s ease, color 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  padding: 10px 26px;
 }
 .media .media-more:hover {
   background-position: left bottom;
@@ -366,10 +362,6 @@
     padding: 12px 18px;
     font-size: 16px;
   }
-}
-.media .media-more {
-  display: flex;
-  padding: 10px 26px;
 }
 @media (max-width: 768px) {
   .media .media-more {
@@ -530,6 +522,9 @@ table {
 .header .header-wrap {
   max-width: 1610px;
   margin: 0 155px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
 }
 @media (max-width: 1024px) {
   .header .header-wrap {
@@ -548,11 +543,6 @@ table {
     max-width: 392px;
     margin: 0 24px;
   }
-}
-.header .header-wrap {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 8px;
 }
 .header .header-wrap .logo a img {
   width: 264px;
@@ -817,6 +807,7 @@ table {
 .footer .footer-wrap {
   max-width: 1610px;
   margin: 0 155px;
+  padding: 40px 0;
 }
 @media (max-width: 1024px) {
   .footer .footer-wrap {
@@ -835,9 +826,6 @@ table {
     max-width: 392px;
     margin: 0 24px;
   }
-}
-.footer .footer-wrap {
-  padding: 40px 0;
 }
 .footer .footer-wrap .active-section {
   display: flex;
