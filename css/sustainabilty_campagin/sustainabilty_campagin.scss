@@ -77,6 +77,7 @@ main{
         .text-wrap-title{
           margin-bottom: 24px;
           h4{
+            line-height: 40px;
             font-size: v.$section-title;
             font-weight: 700;
             margin-bottom: 12px;
@@ -118,6 +119,19 @@ main{
         .link-btn{
           @include m.slide-bg-btn;
           margin-top: 213px;
+        }
+      }
+    }
+    @media (max-width:1440px){
+      .campagin-news-box{
+        &:nth-child(1){
+          .date{margin: 24px 0 0 0;}
+        }
+        &:nth-child(2){
+          .link-btn{margin: 24px 0 0 0;}
+        }
+        &:nth-child(3){
+          .link-btn{margin: 24px 0 0 0;}
         }
       }
     }
