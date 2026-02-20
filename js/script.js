@@ -71,7 +71,6 @@ window.addEventListener("scroll", () => {
   const vh = window.innerHeight;
   const vw = window.innerWidth;
 
-  // 50% 지점부터 진행
   let progress = (vh * 0.3 - rect.top) / (rect.height - vh * 0.5);
   progress = Math.max(0, Math.min(1, progress)); 
   progress = 1 - Math.pow(1 - progress, 3); 
