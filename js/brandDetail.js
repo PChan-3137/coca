@@ -37,22 +37,25 @@ let played = false;
 
 window.addEventListener("scroll", () => {
   const rect = hero.getBoundingClientRect();
-  const triggerPoint = window.innerHeight / 2;
-  const scrollY = window.scrollY;
-  if (rect.top < triggerPoint && rect.bottom > triggerPoint) {
+  const triggerPoint = window.innerHeight / 3;
+
+  const isCenter = rect.top < triggerPoint && rect.bottom > triggerPoint;
+  const isPassed = rect.top < 400;
+  if (isCenter) {
     heroInner.classList.add("fullscreen");
     if (!played) {
       video.play();
       played = true;
     }
+  } else {
+    heroInner.classList.remove("fullscreen");
   }
-  if (scrollY > 800) {
+  if (isPassed) {
     heroText.classList.add("show");
     heroInner.classList.add("dim");
-  }
-  if (scrollY > 2000) {
+  } else {
     heroText.classList.remove("show");
-    heroInner.classList.remove("fullscreen");
+    heroInner.classList.remove("dim");
   }
 });
 
@@ -101,12 +104,11 @@ document.querySelector(".productSwiper").addEventListener("click", e => {
   const slideEl = e.target.closest(".swiper-slide");
   if (!slideEl) return;
 
-  const index = swiper.realIndex; // 항상 진짜 index
+  const index = swiper.realIndex;
   const product = brand.products[index];
 
   console.log(product.name);
 });
-
 
 // Media Section
 const mediaSection = document.querySelector(".media");
@@ -127,29 +129,22 @@ if (!brand.media || brand.media.length === 0) {
     mediaList.appendChild(item);
   });
 }
+
 // Prev / Next Brand
 const total = brandData.length;
-
 const prevIndex = (index - 1 + total) % total;
 const nextIndex = (index + 1) % total;
-
 const prev = brandData[prevIndex];
 const next = brandData[nextIndex];
 
-// prev
 const prevEl = document.getElementById("prevBrand");
 prevEl.style.backgroundImage = `url(${prev.visualImage})`;
 prevEl.onclick = () => {
   location.href = `brand.html?id=${prev.id}`;
 };
 
-// next
 const nextEl = document.getElementById("nextBrand");
 nextEl.style.backgroundImage = `url(${next.visualImage})`;
 nextEl.onclick = () => {
   location.href = `brand.html?id=${next.id}`;
 };
-// ----------------------
-// AOS
-// ----------------------
-AOS.init();
