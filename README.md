@@ -35,6 +35,9 @@
 ### 1) 로컬 파일로 실행 (권장)
 - `index.html` 더블클릭 → 바로 실행
 
+<details>
+  <summary>주요 기능 보기</summary>
+
 ## ✔ 주요 기능
 ### ✏ 메인 페이지
 
@@ -73,22 +76,13 @@
 
 - 스크롤 애니메이션 적용
 
-### ✏ 하위 브랜드 페이지
-<img width="1684" height="838" alt="image" src="https://github.com/user-attachments/assets/4a5ebc49-fe66-4e50-8af7-6db9b5a1e30b" />
+### ✏ 브랜드 소식 및 사회환원 페이지
+<img width="1892" height="776" alt="image" src="https://github.com/user-attachments/assets/fd700c66-e5da-42c1-b1f8-f16e110a9b1e" />
+<img width="1903" height="1065" alt="image" src="https://github.com/user-attachments/assets/490ae727-eefa-46a0-be04-7010cbb305ef" />
 
-- 각 카드별 
+- grid 및 popup 구조
 
-### ✏ 공지사항 페이지
-<img width="1090" height="786" alt="Image" src="https://github.com/user-attachments/assets/672e8e21-3f7b-4cfb-b835-723197d82121" />
-
-- 페이지네이션 기능(notice.js)
-- 페이지 갯수에 따라 prev,next 버튼 비활성화
-
-### ✏ 공통 요소
-<img width="1905" height="263" alt="Image" src="https://github.com/user-attachments/assets/65973bee-a7b5-448c-b816-83aa951cbe80" />
-
-- header : 전체 페이지 공통 헤더 및 GNB + 서브메뉴 포함
-
+</details>
 
 ## 파일 구조
 ```
