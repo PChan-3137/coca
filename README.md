@@ -84,28 +84,3 @@
 
 </details>
 
-## 파일 구조
-```
-/
-├─ index.html
-├─ login.html
-├─ notice.html
-├─ program.html
-├─ program-depth.html
-├─ sitemap.html
-├─ css/
-│  ├─ login.css
-│  ├─ notice.css
-│  ├─ pagenation.css
-│  ├─ program-depth.css
-│  ├─ program.css
-│  ├─ style.css
-│  ├─ sitemap.css
-│  └─ sub-style.css
-├─ js/
-│  ├─ JFscript.js
-│  ├─ notice.js
-│  ├─ program.js
-│  └─ script.js
-└─ img/
-```
