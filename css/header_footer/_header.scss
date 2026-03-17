@@ -3,6 +3,7 @@
 @use '../base/variable' as v;
 
 .header {
+  // max-width: 1320px;
   width: 100%;
   height: auto;
   background: v.$c-text-white;
@@ -15,12 +16,13 @@
 
   .header-wrap {
     @include m.inner;
+    margin: auto;
     display: flex;
-
     justify-content: space-between;
     padding: 0 8px;
 
     .logo {
+      flex: 0 0 auto;
       a {
         img {
           width: 264px;
@@ -33,9 +35,10 @@
     }
 
     nav {
+      flex: 1;
       .nav-menu {
         @include m.flex-center;
-        gap: 60px;
+        justify-content: space-between;
         font-family: v.$ff-kr;
         font-size: v.$fs-re;
         font-weight: 500;
@@ -122,6 +125,14 @@
   &:hover {
     background: v.$c-text-gray;
   }
+  @include r.tablet2{
+    .header-wrap {
+
+      .icons{
+        display: none;
+      }
+    }
+  }
 
   // 반응형 - 768px
   @include r.mobile-lg {
@@ -152,7 +163,6 @@
         }
 
         &.active {
-
           span {
             &:nth-child(1) {
               background-color: v.$c-brand-primary;

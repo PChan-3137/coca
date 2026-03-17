@@ -148,9 +148,6 @@ table {
 .header .header-wrap {
   max-width: 1610px;
   margin: 0 155px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 8px;
 }
 @media (max-width: 1024px) {
   .header .header-wrap {
@@ -170,6 +167,15 @@ table {
     margin: 0 24px;
   }
 }
+.header .header-wrap {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+.header .header-wrap .logo {
+  flex: 0 0 auto;
+}
 .header .header-wrap .logo a img {
   width: 264px;
   height: 42px;
@@ -177,11 +183,14 @@ table {
   filter: invert(100%);
   transition: 0.2s;
 }
+.header .header-wrap nav {
+  flex: 1;
+}
 .header .header-wrap nav .nav-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  justify-content: space-between;
   font-family: "Escoredream";
   font-size: 18px;
   font-weight: 500;
@@ -192,14 +201,18 @@ table {
   position: relative;
   transition: 0.2s;
 }
+.header .header-wrap nav .nav-menu li a {
+  height: 100%;
+}
 .header .header-wrap nav .nav-menu li:hover {
   color: #E31D2E;
 }
 .header .header-wrap nav .nav-menu li .hover-text {
   position: absolute;
-  top: 32px;
+  top: 100%;
   left: 0;
   display: none;
+  z-index: 100;
 }
 .header .header-wrap nav .nav-menu li .hover-text li {
   font-size: 16px;
@@ -249,6 +262,11 @@ table {
 .header:hover {
   background: #E9E9E9;
 }
+@media (max-width: 1140px) {
+  .header .header-wrap .icons {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .header .header-wrap nav {
     display: none;
@@ -259,17 +277,17 @@ table {
   .header .header-wrap .menu-toggle {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
   }
   .header .header-wrap .menu-toggle span {
+    color: #0F0F0F;
     width: 32px;
     height: 3px;
     background-color: #0F0F0F;
     border-radius: 4px;
     transition: 0.2s;
-  }
-  .header .header-wrap .menu-toggle.active {
-    border: 1px solid #E31D2E;
   }
   .header .header-wrap .menu-toggle.active span:nth-child(1) {
     background-color: #E31D2E;
@@ -298,12 +316,9 @@ table {
   .header .header-wrap .menu-toggle span {
     width: 32px;
     height: 3px;
-    background-color: #FFFFFF;
+    background-color: #0F0F0F;
     border-radius: 4px;
     transition: 0.2s;
-  }
-  .header .header-wrap .menu-toggle.active {
-    border: 1px solid #E31D2E;
   }
   .header .header-wrap .menu-toggle.active span:nth-child(1) {
     background-color: #E31D2E;
@@ -432,7 +447,6 @@ table {
 .footer .footer-wrap {
   max-width: 1610px;
   margin: 0 155px;
-  padding: 40px 0;
 }
 @media (max-width: 1024px) {
   .footer .footer-wrap {
@@ -451,6 +465,9 @@ table {
     max-width: 392px;
     margin: 0 24px;
   }
+}
+.footer .footer-wrap {
+  padding: 40px 0;
 }
 .footer .footer-wrap .active-section {
   display: flex;
@@ -862,7 +879,6 @@ main .campagin-news-wrap .campagin-news-box:nth-child(2) .link-btn {
   font-family: "Escoredream";
   cursor: pointer;
   transition: background-position 0.35s ease, color 0.25s ease, border-color 0.25s ease;
-  margin-top: 62px;
 }
 main .campagin-news-wrap .campagin-news-box:nth-child(2) .link-btn:hover {
   background-position: left bottom;
@@ -879,6 +895,9 @@ main .campagin-news-wrap .campagin-news-box:nth-child(2) .link-btn:hover {
     padding: 12px 18px;
     font-size: 16px;
   }
+}
+main .campagin-news-wrap .campagin-news-box:nth-child(2) .link-btn {
+  margin-top: 62px;
 }
 main .campagin-news-wrap .campagin-news-box:nth-child(3) {
   margin-bottom: 0;
@@ -902,7 +921,6 @@ main .campagin-news-wrap .campagin-news-box:nth-child(3) .link-btn {
   font-family: "Escoredream";
   cursor: pointer;
   transition: background-position 0.35s ease, color 0.25s ease, border-color 0.25s ease;
-  margin-top: 213px;
 }
 main .campagin-news-wrap .campagin-news-box:nth-child(3) .link-btn:hover {
   background-position: left bottom;
@@ -919,6 +937,9 @@ main .campagin-news-wrap .campagin-news-box:nth-child(3) .link-btn:hover {
     padding: 12px 18px;
     font-size: 16px;
   }
+}
+main .campagin-news-wrap .campagin-news-box:nth-child(3) .link-btn {
+  margin-top: 213px;
 }
 @media (max-width: 1440px) {
   main .campagin-news-wrap .campagin-news-box:nth-child(1) .date {

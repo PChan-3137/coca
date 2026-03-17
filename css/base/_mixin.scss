@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+	@content;
 }
 // 중앙정렬
 
