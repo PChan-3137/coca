@@ -578,6 +578,7 @@ table {
   font-weight: 500;
   color: #0F0F0F;
   transition: 0.2s;
+  padding: 0 2rem;
 }
 .header .header-wrap nav .nav-menu li {
   position: relative;
